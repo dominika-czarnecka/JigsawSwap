@@ -1,0 +1,632 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1505482F20599A9300B25A6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1505482E20599A9300B25A6A /* AppDelegate.swift */; };
+		1505483620599A9300B25A6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1505483520599A9300B25A6A /* Assets.xcassets */; };
+		1505483920599A9300B25A6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1505483720599A9300B25A6A /* LaunchScreen.storyboard */; };
+		1505484420599A9300B25A6A /* JigsawSwapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1505484320599A9300B25A6A /* JigsawSwapTests.swift */; };
+		1505484F20599A9300B25A6A /* JigsawSwapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1505484E20599A9300B25A6A /* JigsawSwapUITests.swift */; };
+		150548602059AE2100B25A6A /* Localized.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1505485E2059AE2100B25A6A /* Localized.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1505484020599A9300B25A6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1505482320599A9300B25A6A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1505482A20599A9300B25A6A;
+			remoteInfo = JigsawSwap;
+		};
+		1505484B20599A9300B25A6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1505482320599A9300B25A6A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1505482A20599A9300B25A6A;
+			remoteInfo = JigsawSwap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1505482B20599A9300B25A6A /* JigsawSwap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JigsawSwap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1505482E20599A9300B25A6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1505483520599A9300B25A6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1505483820599A9300B25A6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1505483A20599A9300B25A6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1505483F20599A9300B25A6A /* JigsawSwapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JigsawSwapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1505484320599A9300B25A6A /* JigsawSwapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JigsawSwapTests.swift; sourceTree = "<group>"; };
+		1505484520599A9300B25A6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1505484A20599A9300B25A6A /* JigsawSwapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JigsawSwapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1505484E20599A9300B25A6A /* JigsawSwapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JigsawSwapUITests.swift; sourceTree = "<group>"; };
+		1505485020599A9300B25A6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1505485F2059AE2100B25A6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = JigsawSwap/Base.lproj/Localized.strings; sourceTree = "<group>"; };
+		150548612059AE3600B25A6A /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = JigsawSwap/pl.lproj/Localized.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1505482820599A9300B25A6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1505483C20599A9300B25A6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1505484720599A9300B25A6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1505482220599A9300B25A6A = {
+			isa = PBXGroup;
+			children = (
+				1505482D20599A9300B25A6A /* JigsawSwap */,
+				1505484220599A9300B25A6A /* JigsawSwapTests */,
+				1505484D20599A9300B25A6A /* JigsawSwapUITests */,
+				1505482C20599A9300B25A6A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1505482C20599A9300B25A6A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1505482B20599A9300B25A6A /* JigsawSwap.app */,
+				1505483F20599A9300B25A6A /* JigsawSwapTests.xctest */,
+				1505484A20599A9300B25A6A /* JigsawSwapUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1505482D20599A9300B25A6A /* JigsawSwap */ = {
+			isa = PBXGroup;
+			children = (
+				150548622059AE4500B25A6A /* Configuration */,
+				150548672059AF3200B25A6A /* Models */,
+				150548652059AF1B00B25A6A /* Subviews */,
+				150548642059AF0E00B25A6A /* Extensions */,
+				150548632059AEFB00B25A6A /* Controlers */,
+			);
+			path = JigsawSwap;
+			sourceTree = "<group>";
+		};
+		1505484220599A9300B25A6A /* JigsawSwapTests */ = {
+			isa = PBXGroup;
+			children = (
+				1505484320599A9300B25A6A /* JigsawSwapTests.swift */,
+				1505484520599A9300B25A6A /* Info.plist */,
+			);
+			path = JigsawSwapTests;
+			sourceTree = "<group>";
+		};
+		1505484D20599A9300B25A6A /* JigsawSwapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1505484E20599A9300B25A6A /* JigsawSwapUITests.swift */,
+				1505485020599A9300B25A6A /* Info.plist */,
+			);
+			path = JigsawSwapUITests;
+			sourceTree = "<group>";
+		};
+		150548622059AE4500B25A6A /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				150548662059AF2400B25A6A /* Managers */,
+				1505483A20599A9300B25A6A /* Info.plist */,
+				1505483720599A9300B25A6A /* LaunchScreen.storyboard */,
+				1505482E20599A9300B25A6A /* AppDelegate.swift */,
+				1505483520599A9300B25A6A /* Assets.xcassets */,
+				1505485E2059AE2100B25A6A /* Localized.strings */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		150548632059AEFB00B25A6A /* Controlers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controlers;
+			sourceTree = "<group>";
+		};
+		150548642059AF0E00B25A6A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		150548652059AF1B00B25A6A /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		150548662059AF2400B25A6A /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		150548672059AF3200B25A6A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1505482A20599A9300B25A6A /* JigsawSwap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1505485320599A9300B25A6A /* Build configuration list for PBXNativeTarget "JigsawSwap" */;
+			buildPhases = (
+				1505482720599A9300B25A6A /* Sources */,
+				1505482820599A9300B25A6A /* Frameworks */,
+				1505482920599A9300B25A6A /* Resources */,
+				1505485C20599ACB00B25A6A /* TODO as warning */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JigsawSwap;
+			productName = JigsawSwap;
+			productReference = 1505482B20599A9300B25A6A /* JigsawSwap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1505483E20599A9300B25A6A /* JigsawSwapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1505485620599A9300B25A6A /* Build configuration list for PBXNativeTarget "JigsawSwapTests" */;
+			buildPhases = (
+				1505483B20599A9300B25A6A /* Sources */,
+				1505483C20599A9300B25A6A /* Frameworks */,
+				1505483D20599A9300B25A6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1505484120599A9300B25A6A /* PBXTargetDependency */,
+			);
+			name = JigsawSwapTests;
+			productName = JigsawSwapTests;
+			productReference = 1505483F20599A9300B25A6A /* JigsawSwapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1505484920599A9300B25A6A /* JigsawSwapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1505485920599A9300B25A6A /* Build configuration list for PBXNativeTarget "JigsawSwapUITests" */;
+			buildPhases = (
+				1505484620599A9300B25A6A /* Sources */,
+				1505484720599A9300B25A6A /* Frameworks */,
+				1505484820599A9300B25A6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1505484C20599A9300B25A6A /* PBXTargetDependency */,
+			);
+			name = JigsawSwapUITests;
+			productName = JigsawSwapUITests;
+			productReference = 1505484A20599A9300B25A6A /* JigsawSwapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1505482320599A9300B25A6A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Dominika Czarnecka";
+				TargetAttributes = {
+					1505482A20599A9300B25A6A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					1505483E20599A9300B25A6A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1505482A20599A9300B25A6A;
+					};
+					1505484920599A9300B25A6A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1505482A20599A9300B25A6A;
+					};
+				};
+			};
+			buildConfigurationList = 1505482620599A9300B25A6A /* Build configuration list for PBXProject "JigsawSwap" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				pl,
+			);
+			mainGroup = 1505482220599A9300B25A6A;
+			productRefGroup = 1505482C20599A9300B25A6A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1505482A20599A9300B25A6A /* JigsawSwap */,
+				1505483E20599A9300B25A6A /* JigsawSwapTests */,
+				1505484920599A9300B25A6A /* JigsawSwapUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1505482920599A9300B25A6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				150548602059AE2100B25A6A /* Localized.strings in Resources */,
+				1505483920599A9300B25A6A /* LaunchScreen.storyboard in Resources */,
+				1505483620599A9300B25A6A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1505483D20599A9300B25A6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1505484820599A9300B25A6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1505485C20599ACB00B25A6A /* TODO as warning */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "TODO as warning";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#Script to make TODO a Warning\nif [ \"${CONFIGURATION}\" = \"Debug\" ]\nthen\n#TAGS is a keyword to make line as warning\nTAGS=\"TODO:\"\necho \"searching ${SRCROOT} for ${TAGS}\"\nfind \"${SRCROOT}\" \\( -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1505482720599A9300B25A6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1505482F20599A9300B25A6A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1505483B20599A9300B25A6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1505484420599A9300B25A6A /* JigsawSwapTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1505484620599A9300B25A6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1505484F20599A9300B25A6A /* JigsawSwapUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1505484120599A9300B25A6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1505482A20599A9300B25A6A /* JigsawSwap */;
+			targetProxy = 1505484020599A9300B25A6A /* PBXContainerItemProxy */;
+		};
+		1505484C20599A9300B25A6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1505482A20599A9300B25A6A /* JigsawSwap */;
+			targetProxy = 1505484B20599A9300B25A6A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1505483720599A9300B25A6A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1505483820599A9300B25A6A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1505485E2059AE2100B25A6A /* Localized.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1505485F2059AE2100B25A6A /* Base */,
+				150548612059AE3600B25A6A /* pl */,
+			);
+			name = Localized.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1505485120599A9300B25A6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1505485220599A9300B25A6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1505485420599A9300B25A6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2FP33MYDL3;
+				INFOPLIST_FILE = "$(SRCROOT)/JigsawSwap/Configuration/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dominika.czarnecka.com.JigsawSwap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1505485520599A9300B25A6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2FP33MYDL3;
+				INFOPLIST_FILE = "$(SRCROOT)/JigsawSwap/Configuration/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dominika.czarnecka.com.JigsawSwap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1505485720599A9300B25A6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2FP33MYDL3;
+				INFOPLIST_FILE = JigsawSwapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dominika.czarnecka.com.JigsawSwapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JigsawSwap.app/JigsawSwap";
+			};
+			name = Debug;
+		};
+		1505485820599A9300B25A6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2FP33MYDL3;
+				INFOPLIST_FILE = JigsawSwapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dominika.czarnecka.com.JigsawSwapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JigsawSwap.app/JigsawSwap";
+			};
+			name = Release;
+		};
+		1505485A20599A9300B25A6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2FP33MYDL3;
+				INFOPLIST_FILE = JigsawSwapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dominika.czarnecka.com.JigsawSwapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JigsawSwap;
+			};
+			name = Debug;
+		};
+		1505485B20599A9300B25A6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2FP33MYDL3;
+				INFOPLIST_FILE = JigsawSwapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dominika.czarnecka.com.JigsawSwapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JigsawSwap;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1505482620599A9300B25A6A /* Build configuration list for PBXProject "JigsawSwap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1505485120599A9300B25A6A /* Debug */,
+				1505485220599A9300B25A6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1505485320599A9300B25A6A /* Build configuration list for PBXNativeTarget "JigsawSwap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1505485420599A9300B25A6A /* Debug */,
+				1505485520599A9300B25A6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1505485620599A9300B25A6A /* Build configuration list for PBXNativeTarget "JigsawSwapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1505485720599A9300B25A6A /* Debug */,
+				1505485820599A9300B25A6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1505485920599A9300B25A6A /* Build configuration list for PBXNativeTarget "JigsawSwapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1505485A20599A9300B25A6A /* Debug */,
+				1505485B20599A9300B25A6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1505482320599A9300B25A6A /* Project object */;
+}
