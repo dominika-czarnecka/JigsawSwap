@@ -6,16 +6,18 @@ inhibit_all_warnings!
 use_frameworks!
 
 def import_common_pods
-
-	pod 'KVNProgress'
-	pod 'KeychainAccess'
-	pod 'IQKeyboardManager'
-	pod 'Firebase/Core'
-	pod 'RxSwift'
-	pod 'RxCocoa'
-	pod 'RxDataSources'
-	pod 'Kingfisher', '~> 4.0'
-
+    
+    pod 'KVNProgress'
+    pod 'KeychainAccess'
+    pod 'IQKeyboardManager'
+    pod 'Firebase/Auth'
+    pod 'Firebase/Database'
+    pod 'FirebaseUI/Auth', '~> 4.0'
+    pod 'RxSwift'
+    pod 'RxCocoa'
+    pod 'RxDataSources'
+    pod 'Kingfisher', '~> 4.0'
+    
 end
 
 target 'JigsawSwap' do
