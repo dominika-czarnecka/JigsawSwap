@@ -15,7 +15,5 @@ extension UIFont {
         }
         
         return UIFont(name: fontName, size: fontSize) ?? UIFont.systemFont(ofSize: fontSize)
-        
     }
-
 }
