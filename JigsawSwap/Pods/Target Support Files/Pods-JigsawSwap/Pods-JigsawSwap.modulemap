@@ -1,6 +1,0 @@
-framework module Pods_JigsawSwap {
-  umbrella header "Pods-JigsawSwap-umbrella.h"
-
-  export *
-  module * { export * }
-}
