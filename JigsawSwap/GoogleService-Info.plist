@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>733804501718-b82rte128mj6pee43cr0n3o7ro87th2o.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.733804501718-b82rte128mj6pee43cr0n3o7ro87th2o</string>
+	<key>API_KEY</key>
+	<string>AIzaSyClfvKmNb29zjNEcsZouG4IqE7eraHMAGU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>733804501718</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.dominika.czarnecka.MediApp</string>
+	<key>PROJECT_ID</key>
+	<string>jigsawswap-140c9</string>
+	<key>STORAGE_BUCKET</key>
+	<string>jigsawswap-140c9.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:733804501718:ios:a6cb3390c39ab0ca</string>
+	<key>DATABASE_URL</key>
+	<string>https://jigsawswap-140c9.firebaseio.com</string>
+</dict>
+</plist>
