@@ -1,49 +1,28 @@
-//
-//  Date+Extensions.swift
-//  MediApp
-//
-//  Created by Dominika Czarnecka on 05.11.2017.
-//  Copyright © 2017 DominikaCzarnecka. All rights reserved.
-//
 
 import UIKit
 
+enum DateFormatType: String {
+    case dayAndMonth = "dd.MM"
+    case monthMedium = "MMMM"
+    case hour24 = "HH:mm"
+    case dayMonthAndYear = "dd.MM.yyyy"
+}
+
 extension Formatter {
 	
-	static let dayAndMonth: DateFormatter = {
-		let formatter = DateFormatter()
-		formatter.timeZone = TimeZone.current
-		formatter.dateFormat = "dd.MM"
-		return formatter
-	}()
-	
-	static let monthMedium: DateFormatter = {
-		let formatter = DateFormatter()
-		formatter.timeZone = TimeZone.current
-		formatter.dateFormat = "MMMM"
-		return formatter
-	}()
-	
-	static let hour24: DateFormatter = {
-		let formatter = DateFormatter()
-		formatter.timeZone = TimeZone.current
-		formatter.dateFormat = "HH:mm"
-		return formatter
-	}()
-	
-	static let dayMonthAndYear: DateFormatter = {
-		let formatter = DateFormatter()
-		formatter.timeZone = TimeZone.current
-		formatter.dateFormat = "dd.MM.yyyy"
-		return formatter
-	}()
+    static func dateFormater(_ format: DateFormatType) -> DateFormatter {
+        let formatter = DateFormatter()
+        formatter.timeZone = TimeZone.current
+        formatter.dateFormat = format.rawValue
+        return formatter
+    }
+
 }
 
 extension Date {
 	
-    lazy var dayAndMonth: String { return Formatter.dayAndMonth.string(from: self) }
-    lazy var monthMedium: String  { return Formatter.monthMedium.string(from: self) }
-    lazy var hour24:  String      { return Formatter.hour24.string(from: self) }
-    lazy var allDate: String { return Formatter.dayMonthAndYear.string(from: self) }
+    func string(with format: DateFormatType) -> String {
+        return Formatter.dateFormater(format).string(from: self)
+    }
 	
 }

@@ -1,10 +1,3 @@
-//
-//  UIFont+Extensions.swift
-//  MediApp
-//
-//  Created by Dominika Czarnecka on 15.11.2017.
-//  Copyright © 2017 DominikaCzarnecka. All rights reserved.
-//
 
 import UIKit
 
@@ -21,7 +14,7 @@ extension UIFont {
             if italic { fontName.append("Italic") }
         }
         
-        return UIFont(name: fontName, size: fontSize)
+        return UIFont(name: fontName, size: fontSize) ?? UIFont.systemFont(ofSize: fontSize)
         
     }
 

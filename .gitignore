@@ -1,4 +1,5 @@
-Pods/*
+JigsawSwap/Pods/*
 
-xcuserdata/*
-
+JigsawSwap/JigsawSwap.xcodeproj/xcuserdata/*
+JigsawSwap/JigsawSwap.xcworkspace/xcuserdata/*
+*.xcuserstate
