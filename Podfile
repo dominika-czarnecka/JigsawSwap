@@ -11,11 +11,10 @@ def import_common_pods
 	pod 'KeychainAccess'
 	pod 'IQKeyboardManager'
 	pod 'Firebase/Core'
-	pod 'Charts'
-	pod 'Bolts'
 	pod 'RxSwift'
 	pod 'RxCocoa'
 	pod 'RxDataSources'
+	pod 'Kingfisher', '~> 4.0'
 
 end
 
