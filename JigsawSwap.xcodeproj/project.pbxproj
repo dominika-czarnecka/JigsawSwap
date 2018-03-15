@@ -33,7 +33,8 @@
 		158BFB09205AF52A0010A259 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1549AF4B2059B5B3000F657D /* String+Extensions.swift */; };
 		158BFB0A205AF52D0010A259 /* UIAlert+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1549AF492059B5B2000F657D /* UIAlert+Extensions.swift */; };
 		158BFB0B205AF52F0010A259 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1549AF4A2059B5B3000F657D /* UIFont+Extensions.swift */; };
-		158BFB0F205B120A0010A259 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 158BFB0E205B120A0010A259 /* GoogleService-Info.plist */; };
+		158BFB15205B17400010A259 /* FlowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158BFB14205B17400010A259 /* FlowManager.swift */; };
+		158BFB17205B1C020010A259 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 158BFB16205B1C010010A259 /* GoogleService-Info.plist */; };
 		555E7B2AAC31B1866C5939A7 /* Pods_JigsawSwap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B529D695EDDF7C85A047D6BD /* Pods_JigsawSwap.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,7 +79,8 @@
 		1549AF4F2059B937000F657D /* NotoSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
 		1549AF502059B937000F657D /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		1549AF512059B937000F657D /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Italic.ttf"; sourceTree = "<group>"; };
-		158BFB0E205B120A0010A259 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		158BFB14205B17400010A259 /* FlowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowManager.swift; sourceTree = "<group>"; };
+		158BFB16205B1C010010A259 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		196CB5CE34927FF1539B0D63 /* Pods-JigsawSwap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JigsawSwap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JigsawSwap/Pods-JigsawSwap.debug.xcconfig"; sourceTree = "<group>"; };
 		8726F77D8D2482F78D475447 /* Pods-JigsawSwap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JigsawSwap.release.xcconfig"; path = "Pods/Target Support Files/Pods-JigsawSwap/Pods-JigsawSwap.release.xcconfig"; sourceTree = "<group>"; };
 		B529D695EDDF7C85A047D6BD /* Pods_JigsawSwap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JigsawSwap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,12 +137,10 @@
 		1505482D20599A9300B25A6A /* JigsawSwap */ = {
 			isa = PBXGroup;
 			children = (
-				158BFB0E205B120A0010A259 /* GoogleService-Info.plist */,
+				158BFB16205B1C010010A259 /* GoogleService-Info.plist */,
+				158BFB13205B17200010A259 /* Managers */,
 				150548622059AE4500B25A6A /* Configuration */,
-				150548672059AF3200B25A6A /* Models */,
-				150548652059AF1B00B25A6A /* Subviews */,
 				150548642059AF0E00B25A6A /* Extensions */,
-				150548632059AEFB00B25A6A /* Controlers */,
 			);
 			path = JigsawSwap;
 			sourceTree = "<group>";
@@ -167,7 +167,6 @@
 			isa = PBXGroup;
 			children = (
 				1549AF4C2059B91F000F657D /* Fonts */,
-				150548662059AF2400B25A6A /* Managers */,
 				1505483A20599A9300B25A6A /* Info.plist */,
 				1505483720599A9300B25A6A /* LaunchScreen.storyboard */,
 				1505482E20599A9300B25A6A /* AppDelegate.swift */,
@@ -175,13 +174,6 @@
 				1505485E2059AE2100B25A6A /* Localized.strings */,
 			);
 			path = Configuration;
-			sourceTree = "<group>";
-		};
-		150548632059AEFB00B25A6A /* Controlers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controlers;
 			sourceTree = "<group>";
 		};
 		150548642059AF0E00B25A6A /* Extensions */ = {
@@ -196,27 +188,6 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		150548652059AF1B00B25A6A /* Subviews */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Subviews;
-			sourceTree = "<group>";
-		};
-		150548662059AF2400B25A6A /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Managers;
-			sourceTree = "<group>";
-		};
-		150548672059AF3200B25A6A /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		1549AF4C2059B91F000F657D /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,6 +198,15 @@
 				1549AF4D2059B936000F657D /* NotoSans-Regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		158BFB13205B17200010A259 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				158BFB14205B17400010A259 /* FlowManager.swift */,
+			);
+			name = Managers;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		52301DF9AC80FC24FEF33457 /* Pods */ = {
@@ -360,7 +340,7 @@
 			files = (
 				1549AF582059B937000F657D /* NotoSans-BoldItalic.ttf in Resources */,
 				1549AF522059B937000F657D /* NotoSans-Regular.ttf in Resources */,
-				158BFB0F205B120A0010A259 /* GoogleService-Info.plist in Resources */,
+				158BFB17205B1C020010A259 /* GoogleService-Info.plist in Resources */,
 				150548602059AE2100B25A6A /* Localized.strings in Resources */,
 				1505483920599A9300B25A6A /* LaunchScreen.storyboard in Resources */,
 				1549AF552059B937000F657D /* NotoSans-Bold.ttf in Resources */,
@@ -417,9 +397,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JigsawSwap/Pods-JigsawSwap-resources.sh",
+				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle,
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -452,6 +435,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-JigsawSwap/Pods-JigsawSwap-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/KVNProgress/KVNProgress.framework",
@@ -460,11 +444,13 @@
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KVNProgress.framework",
@@ -473,6 +459,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,6 +476,7 @@
 			files = (
 				158BFB09205AF52A0010A259 /* String+Extensions.swift in Sources */,
 				1505482F20599A9300B25A6A /* AppDelegate.swift in Sources */,
+				158BFB15205B17400010A259 /* FlowManager.swift in Sources */,
 				158BFB08205AF5280010A259 /* UIColor+Extensions.swift in Sources */,
 				158BFB0A205AF52D0010A259 /* UIAlert+Extensions.swift in Sources */,
 				158BFB0B205AF52F0010A259 /* UIFont+Extensions.swift in Sources */,
