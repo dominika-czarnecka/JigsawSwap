@@ -12,7 +12,6 @@ def import_common_pods
     pod 'IQKeyboardManager'
     pod 'Firebase/Auth'
     pod 'Firebase/Database'
-    pod 'FirebaseUI/Auth', '~> 4.0'
     pod 'RxSwift'
     pod 'RxCocoa'
     pod 'RxDataSources'

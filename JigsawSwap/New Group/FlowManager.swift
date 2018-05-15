@@ -28,7 +28,7 @@ class FlowManager {
     }
     
     public func loadInitialController() {
-        loadFirstController()
+        loadMainController()
     }
     
     public func loadMainController() {
@@ -65,42 +65,21 @@ class FlowManager {
         appDelegate.window?.makeKeyAndVisible()
     }
     
-    private func loadFirstController(animated: Bool = false) {
-        
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { fatalError() }
-        
-//        if let _ = Auth.auth().currentUser {
-            loadMainController()
-//        } else {
-//            setupNavigationController(navigationController, translucent: false)
-//            appDelegate.window?.rootViewController = navigationController
-//            appDelegate.window?.makeKeyAndVisible()
-//        }
-        
-    }
-    
     func logout() {
         
         //TODO: Logout form Firebase
-        
-        setupNavigationController(navigationController, translucent: false)
-        
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { fatalError() }
-        appDelegate.window?.rootViewController = navigationController
     }
     
+    //TODO: ?????
     public func present(controller: UIViewController, animated: Bool = false) {
         navigationController.setViewControllers([controller], animated: animated)
     }
     
-    private func setupNavigationController(_ navigationController: UINavigationController, translucent: Bool = false){
-        
+    private func setupNavigationController(_ navigationController: UINavigationController, translucent: Bool = false) {
         navigationController.navigationBar.barTintColor = .mainGray
         navigationController.navigationBar.isTranslucent = translucent
         navigationController.navigationBar.tintColor = .white
         navigationController.navigationBar.barStyle = .black
         navigationController.navigationBar.shadowImage = UIImage()
-        
     }
-    
 }
