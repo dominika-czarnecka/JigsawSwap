@@ -1,59 +1,62 @@
 import UIKit
 import RxCocoa
 import RxSwift
-import KeychainAccess
 import FirebaseAuth
 
-class LoginViewController: BaseViewController<LoginView> {
+final class LoginViewController: BaseViewController<LoginView> {
     
-    override func bind() {
-        
-        aView.loginTextField.rx.text
+    override func setupRx() {
+        customView.loginTextField.rx.text
             .changed
             .subscribe(onNext: { [weak self] (_) in
-                _ = self?.aView.loginTextField.validate()
+                _ = self?.customView.loginTextField.isValid()
+            })
+            .disposed(by: disposeBag)
+        //TODO: Maybe handle pressing enter to go to next field. Check if KeyboardManager doesn't handle that.
+        customView.passwordTextField.rx.text
+            .changed
+            .subscribe(onNext: { [weak self] (_) in
+               _ = self?.customView.passwordTextField.isValid()
             })
             .disposed(by: disposeBag)
         
-        aView.passwordTextField.rx.text
-            .changed
-            .subscribe(onNext: { [weak self] (_) in
-               _ = self?.aView.passwordTextField.validate()
-            })
-            .disposed(by: disposeBag)
-        
-        aView.loginButton.rx.tap
-            .subscribe(onNext: { [weak self] (_) in
-                guard let login = self?.aView.loginTextField.text, !login.isEmpty,
-                    let password = self?.aView.passwordTextField.text, !password.isEmpty,
-                    self?.aView.loginTextField.validate() == true && self?.aView.passwordTextField.validate() == true else {
+        customView.loginButton.rx.tap
+            .subscribe(onNext: { [weak self] _ in
+                guard let strongSelf = self,
+                    let login = strongSelf.customView.loginTextField.text,
+                    !login.isEmpty,
+                    let password = strongSelf.customView.passwordTextField.text,
+                    !password.isEmpty,
+                    strongSelf.customView.loginTextField.isValid() &&
+                    strongSelf.customView.passwordTextField.isValid() else {
                         print("Credencials not finished")
-                    return
+                        return
                 }
-                self?.login(mail: login, password: password)
+                strongSelf.login(mail: login, password: password)
             })
             .disposed(by: disposeBag)
         
-        aView.registerButton.rx.tap
+        customView.registerButton.rx.tap
             .subscribe(onNext: { [weak self] in
                 self?.navigationController?.pushViewController(RegisterViewController(), animated: true)
                 })
             .disposed(by: disposeBag)
         
-        aView.forgotPasswordButton.rx.tap
+        customView.forgotPasswordButton.rx.tap
             .subscribe(onNext: { [weak self] in
                 //TODO: Push forgot alert/controller
-                })
+            })
         .disposed(by: disposeBag)
     }
     
     private func login(mail: String, password: String) {
-        Auth.auth().signIn(withEmail: mail, password: password) { (user, error) in
+        Auth.auth().signIn(withEmail: mail, password: password) { [weak self] (user, error) in
             guard error != nil else {
                 let alert = UIAlertController(withOkAction: nil, title: "Error".localized, message: error!.localizedDescription)
-                self.present(alert, animated: true, completion: nil)
+                self?.present(alert, animated: true, completion: nil)
                 return
             }
+            //TODO: handle login
         }
     }
 }

@@ -1,6 +1,6 @@
 import UIKit
 
-enum ValidationRegex {
+enum ValidationType {
     case mail
     case name
     case surname

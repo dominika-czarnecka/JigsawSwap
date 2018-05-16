@@ -32,7 +32,6 @@ class FlowManager {
     }
     
     public func loadMainController() {
-        
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { fatalError() }
         
         let profileBarItem = UITabBarItem(title: "FlowManager.TabBar.Profile".localized, image: #imageLiteral(resourceName: "TabBarProfil"), tag: 1)
@@ -52,9 +51,7 @@ class FlowManager {
         jigsawNavigationController.setViewControllers([UIViewController()], animated: true)
         tradesNavigationController.setViewControllers([UIViewController()], animated: true)
         
-        setupNavigationController(boardNavigationController, translucent: false)
-        setupNavigationController(jigsawNavigationController, translucent: false)
-        setupNavigationController(tradesNavigationController, translucent: false)
+        setupNavigationBarAppearace()
         
         tabBarController.tabBar.backgroundColor = .mainGray
         tabBarController.tabBar.unselectedItemTintColor = .white
@@ -65,7 +62,7 @@ class FlowManager {
         appDelegate.window?.makeKeyAndVisible()
     }
     
-    func logout() {
+    public func logout() {
         
         //TODO: Logout form Firebase
     }
@@ -75,11 +72,12 @@ class FlowManager {
         navigationController.setViewControllers([controller], animated: animated)
     }
     
-    private func setupNavigationController(_ navigationController: UINavigationController, translucent: Bool = false) {
-        navigationController.navigationBar.barTintColor = .mainGray
-        navigationController.navigationBar.isTranslucent = translucent
-        navigationController.navigationBar.tintColor = .white
-        navigationController.navigationBar.barStyle = .black
-        navigationController.navigationBar.shadowImage = UIImage()
+    private func setupNavigationBarAppearace() {
+        let navigationBarAppearace = UINavigationBar.appearance()
+        navigationBarAppearace.barTintColor = .mainGray
+        navigationBarAppearace.isTranslucent = false
+        navigationBarAppearace.tintColor = .white
+        navigationBarAppearace.barStyle = .black
+        navigationBarAppearace.shadowImage = UIImage()
     }
 }

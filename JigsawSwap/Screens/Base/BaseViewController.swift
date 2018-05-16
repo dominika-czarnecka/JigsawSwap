@@ -10,6 +10,7 @@ class BaseViewController<TView: UIView> : UIViewController {
         super.init(nibName: nil, bundle: nil)
     }
     
+    @available(*, unavailable, message: "Please use init() instead")
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -18,21 +19,20 @@ class BaseViewController<TView: UIView> : UIViewController {
         return .lightContent
     }
     
-    var aView: TView {
-        get { return self.view as! TView }
-        set { self.aView = newValue }
+    var customView: TView {
+        get { return view as! TView }
     }
     
     override func loadView() {
-        let view = TView(frame: UIScreen.main.bounds)
-        self.view = view
+        self.view = TView()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        bind()
+        setupRx()
     }
     
-    func bind() {}
-    
+    internal func setupRx() {
+        fatalError("You have to override this function")
+    }
 }

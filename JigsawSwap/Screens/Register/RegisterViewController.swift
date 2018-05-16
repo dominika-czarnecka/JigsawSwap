@@ -4,47 +4,46 @@ import RxSwift
 import RxCocoa
 import FirebaseAuth
 
-class RegisterViewController: BaseViewController<RegisterView> {
+final class RegisterViewController: BaseViewController<RegisterView> {
     
-    override func bind() {
-        
-        aView.loginTextField.rx.text
+    override func setupRx() {
+        customView.loginTextField.rx.text
             .changed
             .subscribe(onNext: { [weak self] (text) in
-                _ = self?.aView.loginTextField.validate()
+                _ = self?.customView.loginTextField.isValid()
             })
             .disposed(by: disposeBag)
         
-        aView.repeatPasswordTextField.rx.text
+        customView.repeatPasswordTextField.rx.text
             .changed
             .subscribe(onNext: { [weak self] (text) in
-                if text == self?.aView.passwordTextField.text {
-                    self?.aView.repeatPasswordTextField.showErrorMessage(false)
+                if text == self?.customView.passwordTextField.text {
+                    self?.customView.repeatPasswordTextField.showErrorMessage(false)
                 } else {
-                    self?.aView.repeatPasswordTextField.showErrorMessage(true)
+                    self?.customView.repeatPasswordTextField.showErrorMessage(true)
                 }
             })
             .disposed(by: disposeBag)
         
-        aView.nameTextField.rx.text
+        customView.nameTextField.rx.text
             .changed
             .subscribe(onNext: { [weak self] (text) in
-                _ = self?.aView.nameTextField.validate()
+                _ = self?.customView.nameTextField.isValid()
             })
             .disposed(by: disposeBag)
         
-        aView.surnameTextField.rx.text
+        customView.surnameTextField.rx.text
             .changed
             .subscribe(onNext: { [weak self] (text) in
-                _ = self?.aView.surnameTextField.validate()
+                _ = self?.customView.surnameTextField.isValid()
             })
             .disposed(by: disposeBag)
         
-        aView.registerButton.rx.tap
+        customView.registerButton.rx.tap
             .subscribe(onNext: { [weak self] (_) in
-                guard let login = self?.aView.loginTextField.text, !login.isEmpty,
-                    let password = self?.aView.passwordTextField.text, !password.isEmpty,
-                    self?.aView.loginTextField.validate() == true && self?.aView.passwordTextField.validate() == true else {
+                guard let login = self?.customView.loginTextField.text, !login.isEmpty,
+                    let password = self?.customView.passwordTextField.text, !password.isEmpty,
+                    self?.customView.loginTextField.isValid() == true && self?.customView.passwordTextField.isValid() == true else {
                         print("Credencials not finished")
                         return
                 }

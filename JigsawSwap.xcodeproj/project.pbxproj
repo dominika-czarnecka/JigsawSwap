@@ -33,7 +33,7 @@
 		1572586B209EDEBC00B18F30 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1572586A209EDEBC00B18F30 /* BaseView.swift */; };
 		1572586D209EDED100B18F30 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1572586C209EDED100B18F30 /* BaseViewController.swift */; };
 		1579C9D520A20C5B0069204C /* ValidationTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1579C9D420A20C5B0069204C /* ValidationTextField.swift */; };
-		1579C9DA20A2142C0069204C /* ValidationRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1579C9D920A2142C0069204C /* ValidationRegex.swift */; };
+		1579C9DA20A2142C0069204C /* ValidationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1579C9D920A2142C0069204C /* ValidationType.swift */; };
 		157A9BC120AB012000D3FCA3 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157A9BBE20AB012000D3FCA3 /* RegisterView.swift */; };
 		157A9BC220AB012000D3FCA3 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157A9BBF20AB012000D3FCA3 /* RegisterViewController.swift */; };
 		158BFB07205AF5250010A259 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1549AF472059B5B2000F657D /* Date+Extensions.swift */; };
@@ -92,7 +92,7 @@
 		1572586A209EDEBC00B18F30 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		1572586C209EDED100B18F30 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		1579C9D420A20C5B0069204C /* ValidationTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationTextField.swift; sourceTree = "<group>"; };
-		1579C9D920A2142C0069204C /* ValidationRegex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationRegex.swift; sourceTree = "<group>"; };
+		1579C9D920A2142C0069204C /* ValidationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationType.swift; sourceTree = "<group>"; };
 		157A9BBE20AB012000D3FCA3 /* RegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		157A9BBF20AB012000D3FCA3 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		158BFB14205B17400010A259 /* FlowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowManager.swift; sourceTree = "<group>"; };
@@ -258,7 +258,7 @@
 		1579C9D620A20F050069204C /* Enums */ = {
 			isa = PBXGroup;
 			children = (
-				1579C9D920A2142C0069204C /* ValidationRegex.swift */,
+				1579C9D920A2142C0069204C /* ValidationType.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -266,8 +266,8 @@
 		157A9BBD20AB009000D3FCA3 /* Register */ = {
 			isa = PBXGroup;
 			children = (
-				157A9BBE20AB012000D3FCA3 /* RegisterView.swift */,
 				157A9BBF20AB012000D3FCA3 /* RegisterViewController.swift */,
+				157A9BBE20AB012000D3FCA3 /* RegisterView.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -552,7 +552,7 @@
 				158BFB08205AF5280010A259 /* UIColor+Extensions.swift in Sources */,
 				158BFB0A205AF52D0010A259 /* UIAlert+Extensions.swift in Sources */,
 				1572586D209EDED100B18F30 /* BaseViewController.swift in Sources */,
-				1579C9DA20A2142C0069204C /* ValidationRegex.swift in Sources */,
+				1579C9DA20A2142C0069204C /* ValidationType.swift in Sources */,
 				158BFB0B205AF52F0010A259 /* UIFont+Extensions.swift in Sources */,
 				1572586B209EDEBC00B18F30 /* BaseView.swift in Sources */,
 				157A9BC220AB012000D3FCA3 /* RegisterViewController.swift in Sources */,

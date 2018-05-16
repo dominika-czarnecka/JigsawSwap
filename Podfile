@@ -8,7 +8,6 @@ use_frameworks!
 def import_common_pods
     
     pod 'KVNProgress'
-    pod 'KeychainAccess'
     pod 'IQKeyboardManager'
     pod 'Firebase/Auth'
     pod 'Firebase/Database'

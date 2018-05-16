@@ -1,27 +1,23 @@
 import UIKit
 
 class BaseView: UIView {
-
-    func configureSubviews() {
-        backgroundColor = .white
-    }
     
-    func configureConstraints() {}
+    internal func configureConstraints() {
+        fatalError("You have to override this function")
+    }
 
     init() {
         super.init(frame: .zero)
-        configureSubviews()
         configureConstraints()
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        configureSubviews()
         configureConstraints()
     }
     
+    @available(*, unavailable, message: "Please use init() instead")
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
 }

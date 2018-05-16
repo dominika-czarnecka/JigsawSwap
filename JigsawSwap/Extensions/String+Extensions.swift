@@ -5,7 +5,7 @@ extension String {
         return NSLocalizedString(self, comment: "")
     }
     
-    func validate(with regex: String) -> Bool {
+    func isValid(with regex: String) -> Bool {
         do {
             let regularExpression = try NSRegularExpression(pattern: regex, options: [])
             return (regularExpression.firstMatch(in: self, options: [], range: NSRange(location: 0, length: self.count)) != nil)
