@@ -24,15 +24,15 @@ class BaseViewController<TView: UIView> : UIViewController {
     }
     
     override func loadView() {
-        self.view = TView()
+        view = TView()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupRx()
+        setupReactiveBinding()
     }
     
-    internal func setupRx() {
+    internal func setupReactiveBinding() {
         fatalError("You have to override this function")
     }
 }

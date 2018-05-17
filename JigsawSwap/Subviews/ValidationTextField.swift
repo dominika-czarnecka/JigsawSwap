@@ -3,7 +3,6 @@ import RxSwift
 import RxCocoa
 
 final class ValidationTextField: UITextField {
-
     let errorMessage: String?
     let defaultString: String?
     let validationRegex: String

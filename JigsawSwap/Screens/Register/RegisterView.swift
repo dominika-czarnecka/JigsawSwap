@@ -15,30 +15,15 @@ final class RegisterView: BaseView {
         return button
     }()
     
-    override init() {
-        super.init(frame: .zero)
-    }
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
     
     override func configureConstraints() {
-        super.configureConstraints()
-        
-        addSubview(loginTextField)
-        addSubview(passwordTextField)
-        addSubview(repeatPasswordTextField)
-        addSubview(nameTextField)
-        addSubview(surnameTextField)
-        addSubview(registerButton)
-        
-        loginTextField.translatesAutoresizingMaskIntoConstraints = false
-        passwordTextField.translatesAutoresizingMaskIntoConstraints = false
-        repeatPasswordTextField.translatesAutoresizingMaskIntoConstraints = false
-        nameTextField.translatesAutoresizingMaskIntoConstraints = false
-        surnameTextField.translatesAutoresizingMaskIntoConstraints = false
-        registerButton.translatesAutoresizingMaskIntoConstraints = false
+        [loginTextField, passwordTextField, repeatPasswordTextField, nameTextField, registerButton, surnameTextField].forEach {
+            $0.translatesAutoresizingMaskIntoConstraints = false
+            addSubview($0)
+        }
         
         NSLayoutConstraint.activate([
             loginTextField.topAnchor.constraint(equalTo: topAnchor, constant: 100),

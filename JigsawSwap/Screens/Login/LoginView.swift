@@ -1,7 +1,6 @@
 import UIKit
 
 final class LoginView: BaseView {
-
     let loginTextField = ValidationTextField(.mail)
     let passwordTextField = ValidationTextField(.password)
     
@@ -25,17 +24,10 @@ final class LoginView: BaseView {
     
     //TODO: Setup constraints
     override func configureConstraints() {
-        addSubview(loginTextField)
-        addSubview(passwordTextField)
-        addSubview(loginButton)
-        addSubview(registerButton)
-        addSubview(forgotPasswordButton)
-        
-        loginTextField.translatesAutoresizingMaskIntoConstraints = false
-        passwordTextField.translatesAutoresizingMaskIntoConstraints = false
-        loginButton.translatesAutoresizingMaskIntoConstraints = false
-        registerButton.translatesAutoresizingMaskIntoConstraints = false
-        forgotPasswordButton.translatesAutoresizingMaskIntoConstraints = false
+        [loginTextField, passwordTextField, loginButton, registerButton, forgotPasswordButton].forEach {
+            $0.translatesAutoresizingMaskIntoConstraints = false
+            addSubview($0)
+        }
         
         NSLayoutConstraint.activate([
             loginTextField.topAnchor.constraint(equalTo: topAnchor, constant: 100),

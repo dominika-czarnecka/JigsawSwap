@@ -6,7 +6,7 @@ import FirebaseAuth
 
 final class RegisterViewController: BaseViewController<RegisterView> {
     
-    override func setupRx() {
+    override func setupReactiveBinding() {
         customView.loginTextField.rx.text
             .changed
             .subscribe(onNext: { [weak self] (text) in
@@ -18,9 +18,9 @@ final class RegisterViewController: BaseViewController<RegisterView> {
             .changed
             .subscribe(onNext: { [weak self] (text) in
                 if text == self?.customView.passwordTextField.text {
-                    self?.customView.repeatPasswordTextField.showErrorMessage(false)
+                    self?.customView.repeatPasswordTextField.dismissErrorMessage()
                 } else {
-                    self?.customView.repeatPasswordTextField.showErrorMessage(true)
+                    self?.customView.repeatPasswordTextField.showErrorMessage()
                 }
             })
             .disposed(by: disposeBag)
@@ -41,13 +41,17 @@ final class RegisterViewController: BaseViewController<RegisterView> {
         
         customView.registerButton.rx.tap
             .subscribe(onNext: { [weak self] (_) in
-                guard let login = self?.customView.loginTextField.text, !login.isEmpty,
-                    let password = self?.customView.passwordTextField.text, !password.isEmpty,
-                    self?.customView.loginTextField.isValid() == true && self?.customView.passwordTextField.isValid() == true else {
+                guard let storngSelf = self,
+                    let login = storngSelf.customView.loginTextField.text,
+                    !login.isEmpty,
+                    let password = storngSelf.customView.passwordTextField.text,
+                    !password.isEmpty,
+                    storngSelf.customView.loginTextField.isValid(),
+                    storngSelf.customView.passwordTextField.isValid() else {
                         print("Credencials not finished")
                         return
                 }
-                self?.register(mail: login, password: password)
+                storngSelf.register(mail: login, password: password)
             })
             .disposed(by: disposeBag)
     }

@@ -5,7 +5,7 @@ import FirebaseAuth
 
 final class LoginViewController: BaseViewController<LoginView> {
     
-    override func setupRx() {
+    override func setupReactiveBinding() {
         customView.loginTextField.rx.text
             .changed
             .subscribe(onNext: { [weak self] (_) in
@@ -29,7 +29,6 @@ final class LoginViewController: BaseViewController<LoginView> {
                     !password.isEmpty,
                     strongSelf.customView.loginTextField.isValid() &&
                     strongSelf.customView.passwordTextField.isValid() else {
-                        print("Credencials not finished")
                         return
                 }
                 strongSelf.login(mail: login, password: password)
