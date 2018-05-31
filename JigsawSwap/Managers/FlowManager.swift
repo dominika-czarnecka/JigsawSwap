@@ -1,7 +1,6 @@
 
 import UIKit
 import IQKeyboardManager
-import KeychainAccess
 import Firebase
 
 /// Class for manage active controllers and configure flow elements
@@ -14,7 +13,7 @@ class FlowManager {
     //TODO: Use LoginViewController
     private lazy var navigationController = UINavigationController(rootViewController: UIViewController())
     private lazy var tabBarController = UITabBarController()
-    private lazy var boardNavigationController = UINavigationController()
+    private lazy var wallNavigationController = UINavigationController()
     //TODO: Change for ProfileViewController
     private lazy var profileViewController = UIViewController()
     //TODO: Is NavigationController really needed?
@@ -34,20 +33,20 @@ class FlowManager {
     public func loadMainController() {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { fatalError() }
         
-        let profileBarItem = UITabBarItem(title: "FlowManager.TabBar.Profile".localized, image: #imageLiteral(resourceName: "TabBarProfil"), tag: 1)
+        let profileBarItem = UITabBarItem(title: "TabBar.Profile".localized, image: #imageLiteral(resourceName: "TabBarProfil"), tag: 1)
         profileViewController.tabBarItem = profileBarItem
         
-        let boardBarItem = UITabBarItem(title: "FlowManager.TabBar.Board".localized, image: #imageLiteral(resourceName: "TabBarSearch"), tag: 2)
-        boardNavigationController.tabBarItem = boardBarItem
+        let wallBarItem = UITabBarItem(title: "TabBar.Board".localized, image: #imageLiteral(resourceName: "TabBarSearch"), tag: 2)
+        wallNavigationController.tabBarItem = wallBarItem
         
-        let jigsawBarItem = UITabBarItem(title: "FlowManager.TabBar.jigsaw".localized, image: #imageLiteral(resourceName: "TabBarJigsaw"), tag: 3)
+        let jigsawBarItem = UITabBarItem(title: "TabBar.jigsaw".localized, image: #imageLiteral(resourceName: "TabBarJigsaw"), tag: 3)
         jigsawNavigationController.tabBarItem = jigsawBarItem
         
-        let tradesBarItem = UITabBarItem(title: "FlowManager.TabBar.treats".localized, image: #imageLiteral(resourceName: "TabBarExchange"), tag: 4)
+        let tradesBarItem = UITabBarItem(title: "TabBar.treats".localized, image: #imageLiteral(resourceName: "trade"), tag: 4)
         tradesNavigationController.tabBarItem = tradesBarItem
         
         //TODO: add controlers
-        boardNavigationController.setViewControllers([UIViewController()], animated: true)
+        wallNavigationController.setViewControllers([WallViewController()], animated: true)
         jigsawNavigationController.setViewControllers([UIViewController()], animated: true)
         tradesNavigationController.setViewControllers([UIViewController()], animated: true)
         
@@ -56,7 +55,7 @@ class FlowManager {
         tabBarController.tabBar.backgroundColor = .mainGray
         tabBarController.tabBar.unselectedItemTintColor = .white
         tabBarController.tabBar.tintColor = .mainPink
-        tabBarController.viewControllers = [profileViewController, boardNavigationController, jigsawNavigationController, tradesNavigationController]
+        tabBarController.viewControllers = [profileViewController, wallNavigationController, jigsawNavigationController, tradesNavigationController]
         
         appDelegate.window?.rootViewController = tabBarController
         appDelegate.window?.makeKeyAndVisible()

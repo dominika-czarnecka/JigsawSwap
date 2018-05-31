@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  JigsawSwap
+
+  Created by Dominika Czarnecka on 31.05.2018.
+  Copyright © 2018 Dominika Czarnecka. All rights reserved.
+*/
+
+"General.Error" = "Error";
+
+"Wall.Filter" = "Filter";
+"Wall.Add" = "Add";
+"TabBar.treats" = "Treats";
+"TabBar.jigsaw" = "Jigsaws";
+"TabBar.Board" = "Wall";
+"TabBar.Profile" = "Profile";

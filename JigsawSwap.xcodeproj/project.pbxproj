@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		1505482F20599A9300B25A6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1505482E20599A9300B25A6A /* AppDelegate.swift */; };
 		1505483620599A9300B25A6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1505483520599A9300B25A6A /* Assets.xcassets */; };
-		1505483920599A9300B25A6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1505483720599A9300B25A6A /* LaunchScreen.storyboard */; };
 		1505484420599A9300B25A6A /* JigsawSwapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1505484320599A9300B25A6A /* JigsawSwapTests.swift */; };
 		1505484F20599A9300B25A6A /* JigsawSwapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1505484E20599A9300B25A6A /* JigsawSwapUITests.swift */; };
-		150548602059AE2100B25A6A /* Localized.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1505485E2059AE2100B25A6A /* Localized.strings */; };
 		1509099A20A9ABCD003BC7B6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1509099920A9ABCD003BC7B6 /* LoginViewController.swift */; };
+		1523263F20BEE668001533AB /* FirebasePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1523263E20BEE668001533AB /* FirebasePath.swift */; };
+		1523264120C00250001533AB /* AddJigsawRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1523264020C00250001533AB /* AddJigsawRequest.swift */; };
 		1549AF522059B937000F657D /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1549AF4D2059B936000F657D /* NotoSans-Regular.ttf */; };
 		1549AF532059B937000F657D /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1549AF4D2059B936000F657D /* NotoSans-Regular.ttf */; };
 		1549AF542059B937000F657D /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1549AF4D2059B936000F657D /* NotoSans-Regular.ttf */; };
@@ -37,12 +37,25 @@
 		157A9BC120AB012000D3FCA3 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157A9BBE20AB012000D3FCA3 /* RegisterView.swift */; };
 		157A9BC220AB012000D3FCA3 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157A9BBF20AB012000D3FCA3 /* RegisterViewController.swift */; };
 		157A9BD820ADAE8700D3FCA3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 157A9BD720ADAE8600D3FCA3 /* GoogleService-Info.plist */; };
+		157A9BDC20ADB02500D3FCA3 /* WallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157A9BD920ADB02500D3FCA3 /* WallViewController.swift */; };
+		157A9BDD20ADB02500D3FCA3 /* WallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157A9BDA20ADB02500D3FCA3 /* WallView.swift */; };
+		157A9BDE20ADB02500D3FCA3 /* WallViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157A9BDB20ADB02500D3FCA3 /* WallViewModel.swift */; };
+		157A9BE020ADB15300D3FCA3 /* WallTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157A9BDF20ADB15300D3FCA3 /* WallTableViewCell.swift */; };
+		157A9BE320ADB30800D3FCA3 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157A9BE220ADB30800D3FCA3 /* BaseTableViewCell.swift */; };
+		157A9BE520ADC30100D3FCA3 /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157A9BE420ADC30100D3FCA3 /* CGFloat+Extensions.swift */; };
+		157A9BE820AEDFCB00D3FCA3 /* Jigsaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157A9BE720AEDFCB00D3FCA3 /* Jigsaw.swift */; };
 		158BFB07205AF5250010A259 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1549AF472059B5B2000F657D /* Date+Extensions.swift */; };
 		158BFB08205AF5280010A259 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1549AF482059B5B2000F657D /* UIColor+Extensions.swift */; };
 		158BFB09205AF52A0010A259 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1549AF4B2059B5B3000F657D /* String+Extensions.swift */; };
 		158BFB0A205AF52D0010A259 /* UIAlert+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1549AF492059B5B2000F657D /* UIAlert+Extensions.swift */; };
 		158BFB0B205AF52F0010A259 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1549AF4A2059B5B3000F657D /* UIFont+Extensions.swift */; };
 		158BFB15205B17400010A259 /* FlowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158BFB14205B17400010A259 /* FlowManager.swift */; };
+		15B5958920BB1FDC003E8E8C /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B5958720BB1FDC003E8E8C /* ApiManager.swift */; };
+		15B5958A20BB1FDC003E8E8C /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B5958820BB1FDC003E8E8C /* APIRequest.swift */; };
+		15B5958C20BB2022003E8E8C /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B5958B20BB2022003E8E8C /* RequestType.swift */; };
+		15B5958F20BB2094003E8E8C /* JigsawsForWallRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B5958E20BB2094003E8E8C /* JigsawsForWallRequest.swift */; };
+		15CD13F720C01AF8003A51D9 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15CD13F620C01AF8003A51D9 /* Launch Screen.storyboard */; };
+		15CD13FA20C01CDB003A51D9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 15CD13FC20C01CDB003A51D9 /* Localizable.strings */; };
 		555E7B2AAC31B1866C5939A7 /* Pods_JigsawSwap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B529D695EDDF7C85A047D6BD /* Pods_JigsawSwap.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,7 +80,6 @@
 		1505482B20599A9300B25A6A /* JigsawSwap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JigsawSwap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1505482E20599A9300B25A6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1505483520599A9300B25A6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1505483820599A9300B25A6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1505483A20599A9300B25A6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1505483F20599A9300B25A6A /* JigsawSwapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JigsawSwapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1505484320599A9300B25A6A /* JigsawSwapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JigsawSwapTests.swift; sourceTree = "<group>"; };
@@ -75,9 +87,9 @@
 		1505484A20599A9300B25A6A /* JigsawSwapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JigsawSwapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1505484E20599A9300B25A6A /* JigsawSwapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JigsawSwapUITests.swift; sourceTree = "<group>"; };
 		1505485020599A9300B25A6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1505485F2059AE2100B25A6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = JigsawSwap/Base.lproj/Localized.strings; sourceTree = "<group>"; };
-		150548612059AE3600B25A6A /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = JigsawSwap/pl.lproj/Localized.strings; sourceTree = "<group>"; };
 		1509099920A9ABCD003BC7B6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1523263E20BEE668001533AB /* FirebasePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebasePath.swift; sourceTree = "<group>"; };
+		1523264020C00250001533AB /* AddJigsawRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddJigsawRequest.swift; sourceTree = "<group>"; };
 		1549AF472059B5B2000F657D /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		1549AF482059B5B2000F657D /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		1549AF492059B5B2000F657D /* UIAlert+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlert+Extensions.swift"; sourceTree = "<group>"; };
@@ -96,8 +108,21 @@
 		157A9BBE20AB012000D3FCA3 /* RegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		157A9BBF20AB012000D3FCA3 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		157A9BD720ADAE8600D3FCA3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "JigsawSwap/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
-		158BFB14205B17400010A259 /* FlowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowManager.swift; sourceTree = "<group>"; };
+		157A9BD920ADB02500D3FCA3 /* WallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallViewController.swift; sourceTree = "<group>"; };
+		157A9BDA20ADB02500D3FCA3 /* WallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallView.swift; sourceTree = "<group>"; };
+		157A9BDB20ADB02500D3FCA3 /* WallViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallViewModel.swift; sourceTree = "<group>"; };
+		157A9BDF20ADB15300D3FCA3 /* WallTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallTableViewCell.swift; sourceTree = "<group>"; };
+		157A9BE220ADB30800D3FCA3 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		157A9BE420ADC30100D3FCA3 /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
+		157A9BE720AEDFCB00D3FCA3 /* Jigsaw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jigsaw.swift; sourceTree = "<group>"; };
+		158BFB14205B17400010A259 /* FlowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FlowManager.swift; path = ../Managers/FlowManager.swift; sourceTree = "<group>"; };
 		158BFB16205B1C010010A259 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		15B5958720BB1FDC003E8E8C /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		15B5958820BB1FDC003E8E8C /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		15B5958B20BB2022003E8E8C /* RequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
+		15B5958E20BB2094003E8E8C /* JigsawsForWallRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JigsawsForWallRequest.swift; sourceTree = "<group>"; };
+		15CD13F620C01AF8003A51D9 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		15CD13FB20C01CDB003A51D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		196CB5CE34927FF1539B0D63 /* Pods-JigsawSwap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JigsawSwap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JigsawSwap/Pods-JigsawSwap.debug.xcconfig"; sourceTree = "<group>"; };
 		8726F77D8D2482F78D475447 /* Pods-JigsawSwap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JigsawSwap.release.xcconfig"; path = "Pods/Target Support Files/Pods-JigsawSwap/Pods-JigsawSwap.release.xcconfig"; sourceTree = "<group>"; };
 		B529D695EDDF7C85A047D6BD /* Pods_JigsawSwap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JigsawSwap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,10 +180,11 @@
 		1505482D20599A9300B25A6A /* JigsawSwap */ = {
 			isa = PBXGroup;
 			children = (
-				157A9BC420AC5ABD00D3FCA3 /* Screens */,
+				157A9BE920AEEBA000D3FCA3 /* Network */,
+				157A9BE620AEDCD500D3FCA3 /* Models */,
 				1579C9D620A20F050069204C /* Enums */,
 				158BFB13205B17200010A259 /* Managers */,
-				150548622059AE4500B25A6A /* Configuration */,
+				150548622059AE4500B25A6A /* Resources */,
 				150548642059AF0E00B25A6A /* Extensions */,
 				1579C9D320A20C2B0069204C /* Subviews */,
 				15725863209EDD7300B18F30 /* Screens */,
@@ -184,18 +210,18 @@
 			path = JigsawSwapUITests;
 			sourceTree = "<group>";
 		};
-		150548622059AE4500B25A6A /* Configuration */ = {
+		150548622059AE4500B25A6A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				157A9BD720ADAE8600D3FCA3 /* GoogleService-Info.plist */,
 				1549AF4C2059B91F000F657D /* Fonts */,
 				1505483A20599A9300B25A6A /* Info.plist */,
-				1505483720599A9300B25A6A /* LaunchScreen.storyboard */,
 				1505482E20599A9300B25A6A /* AppDelegate.swift */,
 				1505483520599A9300B25A6A /* Assets.xcassets */,
-				1505485E2059AE2100B25A6A /* Localized.strings */,
+				15CD13F620C01AF8003A51D9 /* Launch Screen.storyboard */,
+				15CD13FC20C01CDB003A51D9 /* Localizable.strings */,
 			);
-			path = Configuration;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		150548642059AF0E00B25A6A /* Extensions */ = {
@@ -206,6 +232,7 @@
 				1549AF4B2059B5B3000F657D /* String+Extensions.swift */,
 				1549AF492059B5B2000F657D /* UIAlert+Extensions.swift */,
 				1549AF4A2059B5B3000F657D /* UIFont+Extensions.swift */,
+				157A9BE420ADC30100D3FCA3 /* CGFloat+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -225,6 +252,7 @@
 		15725863209EDD7300B18F30 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				157A9BC520AC5AD200D3FCA3 /* Wall */,
 				157A9BBD20AB009000D3FCA3 /* Register */,
 				15725867209EDE4B00B18F30 /* Base */,
 				15725864209EDDA600B18F30 /* Login */,
@@ -253,6 +281,7 @@
 		1579C9D320A20C2B0069204C /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
+				157A9BE120ADB2F700D3FCA3 /* Base */,
 				1579C9D420A20C5B0069204C /* ValidationTextField.swift */,
 			);
 			path = Subviews;
@@ -262,6 +291,8 @@
 			isa = PBXGroup;
 			children = (
 				1579C9D920A2142C0069204C /* ValidationType.swift */,
+				15B5958B20BB2022003E8E8C /* RequestType.swift */,
+				1523263E20BEE668001533AB /* FirebasePath.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -275,18 +306,13 @@
 			path = Register;
 			sourceTree = "<group>";
 		};
-		157A9BC420AC5ABD00D3FCA3 /* Screens */ = {
-			isa = PBXGroup;
-			children = (
-				157A9BC520AC5AD200D3FCA3 /* Wall */,
-			);
-			name = Screens;
-			path = "New Group";
-			sourceTree = "<group>";
-		};
 		157A9BC520AC5AD200D3FCA3 /* Wall */ = {
 			isa = PBXGroup;
 			children = (
+				157A9BD920ADB02500D3FCA3 /* WallViewController.swift */,
+				157A9BDA20ADB02500D3FCA3 /* WallView.swift */,
+				157A9BDB20ADB02500D3FCA3 /* WallViewModel.swift */,
+				157A9BDF20ADB15300D3FCA3 /* WallTableViewCell.swift */,
 			);
 			path = Wall;
 			sourceTree = "<group>";
@@ -299,13 +325,47 @@
 			name = "Recovered References";
 			sourceTree = "<group>";
 		};
+		157A9BE120ADB2F700D3FCA3 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				157A9BE220ADB30800D3FCA3 /* BaseTableViewCell.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		157A9BE620AEDCD500D3FCA3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				157A9BE720AEDFCB00D3FCA3 /* Jigsaw.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		157A9BE920AEEBA000D3FCA3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				15B5958D20BB2068003E8E8C /* Requests */,
+				15B5958720BB1FDC003E8E8C /* ApiManager.swift */,
+				15B5958820BB1FDC003E8E8C /* APIRequest.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		158BFB13205B17200010A259 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
 				158BFB14205B17400010A259 /* FlowManager.swift */,
 			);
-			name = Managers;
-			path = "New Group";
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		15B5958D20BB2068003E8E8C /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				15B5958E20BB2094003E8E8C /* JigsawsForWallRequest.swift */,
+				1523264020C00250001533AB /* AddJigsawRequest.swift */,
+			);
+			path = Requests;
 			sourceTree = "<group>";
 		};
 		52301DF9AC80FC24FEF33457 /* Pods */ = {
@@ -440,8 +500,8 @@
 				1549AF582059B937000F657D /* NotoSans-BoldItalic.ttf in Resources */,
 				1549AF522059B937000F657D /* NotoSans-Regular.ttf in Resources */,
 				157A9BD820ADAE8700D3FCA3 /* GoogleService-Info.plist in Resources */,
-				150548602059AE2100B25A6A /* Localized.strings in Resources */,
-				1505483920599A9300B25A6A /* LaunchScreen.storyboard in Resources */,
+				15CD13F720C01AF8003A51D9 /* Launch Screen.storyboard in Resources */,
+				15CD13FA20C01CDB003A51D9 /* Localizable.strings in Resources */,
 				1549AF552059B937000F657D /* NotoSans-Bold.ttf in Resources */,
 				1505483620599A9300B25A6A /* Assets.xcassets in Resources */,
 				1549AF5B2059B937000F657D /* LICENSE.txt in Resources */,
@@ -538,7 +598,6 @@
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/KVNProgress/KVNProgress.framework",
-				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
@@ -553,7 +612,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KVNProgress.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
@@ -575,15 +633,28 @@
 			files = (
 				158BFB09205AF52A0010A259 /* String+Extensions.swift in Sources */,
 				1505482F20599A9300B25A6A /* AppDelegate.swift in Sources */,
+				15B5958A20BB1FDC003E8E8C /* APIRequest.swift in Sources */,
+				157A9BDD20ADB02500D3FCA3 /* WallView.swift in Sources */,
+				157A9BDC20ADB02500D3FCA3 /* WallViewController.swift in Sources */,
 				158BFB15205B17400010A259 /* FlowManager.swift in Sources */,
 				158BFB08205AF5280010A259 /* UIColor+Extensions.swift in Sources */,
+				1523264120C00250001533AB /* AddJigsawRequest.swift in Sources */,
+				1523263F20BEE668001533AB /* FirebasePath.swift in Sources */,
+				157A9BE820AEDFCB00D3FCA3 /* Jigsaw.swift in Sources */,
+				157A9BDE20ADB02500D3FCA3 /* WallViewModel.swift in Sources */,
 				158BFB0A205AF52D0010A259 /* UIAlert+Extensions.swift in Sources */,
+				157A9BE320ADB30800D3FCA3 /* BaseTableViewCell.swift in Sources */,
 				1572586D209EDED100B18F30 /* BaseViewController.swift in Sources */,
 				1579C9DA20A2142C0069204C /* ValidationType.swift in Sources */,
 				158BFB0B205AF52F0010A259 /* UIFont+Extensions.swift in Sources */,
+				15B5958C20BB2022003E8E8C /* RequestType.swift in Sources */,
 				1572586B209EDEBC00B18F30 /* BaseView.swift in Sources */,
+				15B5958F20BB2094003E8E8C /* JigsawsForWallRequest.swift in Sources */,
+				157A9BE020ADB15300D3FCA3 /* WallTableViewCell.swift in Sources */,
+				15B5958920BB1FDC003E8E8C /* ApiManager.swift in Sources */,
 				157A9BC220AB012000D3FCA3 /* RegisterViewController.swift in Sources */,
 				15725866209EDDB900B18F30 /* LoginView.swift in Sources */,
+				157A9BE520ADC30100D3FCA3 /* CGFloat+Extensions.swift in Sources */,
 				158BFB07205AF5250010A259 /* Date+Extensions.swift in Sources */,
 				157A9BC120AB012000D3FCA3 /* RegisterView.swift in Sources */,
 				1509099A20A9ABCD003BC7B6 /* LoginViewController.swift in Sources */,
@@ -623,21 +694,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1505483720599A9300B25A6A /* LaunchScreen.storyboard */ = {
+		15CD13FC20C01CDB003A51D9 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1505483820599A9300B25A6A /* Base */,
+				15CD13FB20C01CDB003A51D9 /* en */,
 			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		1505485E2059AE2100B25A6A /* Localized.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1505485F2059AE2100B25A6A /* Base */,
-				150548612059AE3600B25A6A /* pl */,
-			);
-			name = Localized.strings;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -759,7 +821,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2FP33MYDL3;
-				INFOPLIST_FILE = "$(SRCROOT)/JigsawSwap/Configuration/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/JigsawSwap/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dominika.czarnecka.com.JigsawSwap;
@@ -776,7 +838,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2FP33MYDL3;
-				INFOPLIST_FILE = "$(SRCROOT)/JigsawSwap/Configuration/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/JigsawSwap/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dominika.czarnecka.com.JigsawSwap;
