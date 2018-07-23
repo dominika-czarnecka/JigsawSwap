@@ -15,7 +15,6 @@ final class WallViewController: BaseViewController<WallView> {
     }
     
     override func setupReactiveBinding() {
-        //TODO: what if empty?
         viewModel.jigsaws.asObservable()
             .bind(to: customView.tableView.rx.items(cellIdentifier: reuseIdentifier)) { index, model, cell in
                 guard let cell = cell as? WallTableViewCell else { return }

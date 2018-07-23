@@ -20,9 +20,7 @@ extension APIRequest {
         }
     
         if isAuthRequired {
-//            let auth = Auth.auth().currentUser?.providerID
-//            components.user = "admin"
-//            components.password = "admin"
+            //TODO: Add authorization
         }
 
         guard let url = components.url else {

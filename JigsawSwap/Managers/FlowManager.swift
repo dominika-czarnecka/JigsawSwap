@@ -3,24 +3,17 @@ import UIKit
 import IQKeyboardManager
 import Firebase
 
-/// Class for manage active controllers and configure flow elements
 class FlowManager {
-    
-    /// Singleton instance of _FlowManager_
     static public let shared = FlowManager()
     
-    /// Main navigation controller in application. Base of _FlowManager_.
-    //TODO: Use LoginViewController
+     //TODO: add controlers
     private lazy var navigationController = UINavigationController(rootViewController: UIViewController())
     private lazy var tabBarController = UITabBarController()
-    private lazy var wallNavigationController = UINavigationController()
-    //TODO: Change for ProfileViewController
+    private lazy var wallNavigationController = UINavigationController(rootViewController: WallViewController())
     private lazy var profileViewController = UIViewController()
-    //TODO: Is NavigationController really needed?
-    private lazy var jigsawNavigationController = UINavigationController()
-    private lazy var tradesNavigationController = UINavigationController()
+    private lazy var jigsawNavigationController = UINavigationController(rootViewController: UIViewController())
+    private lazy var tradesNavigationController = UINavigationController(rootViewController: UIViewController())
     
-    /// _FlowManager_ constructor
     private init() {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { fatalError() }
         appDelegate.window = UIWindow(frame: UIScreen.main.bounds)
@@ -45,11 +38,6 @@ class FlowManager {
         let tradesBarItem = UITabBarItem(title: "TabBar.treats".localized, image: #imageLiteral(resourceName: "trade"), tag: 4)
         tradesNavigationController.tabBarItem = tradesBarItem
         
-        //TODO: add controlers
-        wallNavigationController.setViewControllers([WallViewController()], animated: true)
-        jigsawNavigationController.setViewControllers([UIViewController()], animated: true)
-        tradesNavigationController.setViewControllers([UIViewController()], animated: true)
-        
         setupNavigationBarAppearace()
         
         tabBarController.tabBar.backgroundColor = .mainGray
@@ -62,13 +50,7 @@ class FlowManager {
     }
     
     public func logout() {
-        
         //TODO: Logout form Firebase
-    }
-    
-    //TODO: ?????
-    public func present(controller: UIViewController, animated: Bool = false) {
-        navigationController.setViewControllers([controller], animated: animated)
     }
     
     private func setupNavigationBarAppearace() {

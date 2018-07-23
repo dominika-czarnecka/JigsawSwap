@@ -1,4 +1,4 @@
-import UIKit
+import Foundation
 
 class JigsawsForWallRequest: APIRequest {
     var method: RequestType = .GET

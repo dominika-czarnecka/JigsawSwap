@@ -1,5 +1,3 @@
-import UIKit
-
 enum ValidationType {
     case mail
     case name

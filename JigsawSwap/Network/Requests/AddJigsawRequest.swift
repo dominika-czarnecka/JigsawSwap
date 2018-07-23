@@ -1,4 +1,4 @@
-import UIKit
+import Foundation
 
 class AddJigsawRequest: APIRequest {
     var method: RequestType = .POST
@@ -9,7 +9,7 @@ class AddJigsawRequest: APIRequest {
     
     init(_ jigsaw: Jigsaw) {
         do {
-        body = try JSONEncoder().encode(jigsaw)
+            body = try JSONEncoder().encode(jigsaw)
         } catch {
             print(error)
         }

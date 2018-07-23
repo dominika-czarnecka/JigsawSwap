@@ -1,5 +1,3 @@
-import UIKit
-
 class Jigsaw: Codable {
     var ownerID: String?
     var piecesCount: Int?
