@@ -7,28 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1505482F20599A9300B25A6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1505482E20599A9300B25A6A /* AppDelegate.swift */; };
-		1505483620599A9300B25A6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1505483520599A9300B25A6A /* Assets.xcassets */; };
-		1505483920599A9300B25A6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1505483720599A9300B25A6A /* LaunchScreen.storyboard */; };
 		1505484420599A9300B25A6A /* JigsawSwapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1505484320599A9300B25A6A /* JigsawSwapTests.swift */; };
 		1505484F20599A9300B25A6A /* JigsawSwapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1505484E20599A9300B25A6A /* JigsawSwapUITests.swift */; };
-		150548602059AE2100B25A6A /* Localized.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1505485E2059AE2100B25A6A /* Localized.strings */; };
 		1509099A20A9ABCD003BC7B6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1509099920A9ABCD003BC7B6 /* LoginViewController.swift */; };
-		1549AF522059B937000F657D /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1549AF4D2059B936000F657D /* NotoSans-Regular.ttf */; };
-		1549AF532059B937000F657D /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1549AF4D2059B936000F657D /* NotoSans-Regular.ttf */; };
-		1549AF542059B937000F657D /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1549AF4D2059B936000F657D /* NotoSans-Regular.ttf */; };
-		1549AF552059B937000F657D /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1549AF4E2059B936000F657D /* NotoSans-Bold.ttf */; };
-		1549AF562059B937000F657D /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1549AF4E2059B936000F657D /* NotoSans-Bold.ttf */; };
-		1549AF572059B937000F657D /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1549AF4E2059B936000F657D /* NotoSans-Bold.ttf */; };
-		1549AF582059B937000F657D /* NotoSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1549AF4F2059B937000F657D /* NotoSans-BoldItalic.ttf */; };
-		1549AF592059B937000F657D /* NotoSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1549AF4F2059B937000F657D /* NotoSans-BoldItalic.ttf */; };
-		1549AF5A2059B937000F657D /* NotoSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1549AF4F2059B937000F657D /* NotoSans-BoldItalic.ttf */; };
-		1549AF5B2059B937000F657D /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1549AF502059B937000F657D /* LICENSE.txt */; };
-		1549AF5C2059B937000F657D /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1549AF502059B937000F657D /* LICENSE.txt */; };
-		1549AF5D2059B937000F657D /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1549AF502059B937000F657D /* LICENSE.txt */; };
-		1549AF5E2059B937000F657D /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1549AF512059B937000F657D /* NotoSans-Italic.ttf */; };
-		1549AF5F2059B937000F657D /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1549AF512059B937000F657D /* NotoSans-Italic.ttf */; };
-		1549AF602059B937000F657D /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1549AF512059B937000F657D /* NotoSans-Italic.ttf */; };
+		153330832108A6DE00877DA9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 153330772108A6DE00877DA9 /* Localizable.strings */; };
+		153330842108A6DE00877DA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 153330792108A6DE00877DA9 /* Assets.xcassets */; };
+		153330852108A6DE00877DA9 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1533307A2108A6DE00877DA9 /* Launch Screen.storyboard */; };
+		153330862108A6DE00877DA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1533307B2108A6DE00877DA9 /* AppDelegate.swift */; };
+		153330872108A6DE00877DA9 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1533307D2108A6DE00877DA9 /* NotoSans-Regular.ttf */; };
+		153330882108A6DE00877DA9 /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1533307E2108A6DE00877DA9 /* NotoSans-Bold.ttf */; };
+		153330892108A6DE00877DA9 /* NotoSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1533307F2108A6DE00877DA9 /* NotoSans-BoldItalic.ttf */; };
+		1533308A2108A6DE00877DA9 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 153330802108A6DE00877DA9 /* LICENSE.txt */; };
+		1533308B2108A6DE00877DA9 /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 153330812108A6DE00877DA9 /* NotoSans-Italic.ttf */; };
+		1533308C2108A6DE00877DA9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 153330822108A6DE00877DA9 /* Info.plist */; };
+		153330922108A88500877DA9 /* WallViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1533308E2108A88500877DA9 /* WallViewModel.swift */; };
+		153330932108A88500877DA9 /* WallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1533308F2108A88500877DA9 /* WallView.swift */; };
+		153330942108A88500877DA9 /* WallTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153330902108A88500877DA9 /* WallTableViewCell.swift */; };
+		153330952108A88500877DA9 /* WallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153330912108A88500877DA9 /* WallViewController.swift */; };
+		1533309C2108A8C700877DA9 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153330972108A8C700877DA9 /* ApiManager.swift */; };
+		1533309D2108A8C700877DA9 /* JigsawsForWallRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153330992108A8C700877DA9 /* JigsawsForWallRequest.swift */; };
+		1533309E2108A8C700877DA9 /* AddJigsawRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1533309A2108A8C700877DA9 /* AddJigsawRequest.swift */; };
+		1533309F2108A8C700877DA9 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1533309B2108A8C700877DA9 /* APIRequest.swift */; };
+		153330A22108A8F500877DA9 /* Jigsaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153330A12108A8F400877DA9 /* Jigsaw.swift */; };
+		153330A52108A90F00877DA9 /* FirebasePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153330A32108A90E00877DA9 /* FirebasePath.swift */; };
+		153330A62108A90F00877DA9 /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153330A42108A90F00877DA9 /* RequestType.swift */; };
+		153330A92108A93500877DA9 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153330A82108A93500877DA9 /* BaseTableViewCell.swift */; };
+		153330AB2108A9B200877DA9 /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153330AA2108A9B200877DA9 /* CGFloat+Extensions.swift */; };
 		15725866209EDDB900B18F30 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15725865209EDDB900B18F30 /* LoginView.swift */; };
 		1572586B209EDEBC00B18F30 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1572586A209EDEBC00B18F30 /* BaseView.swift */; };
 		1572586D209EDED100B18F30 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1572586C209EDED100B18F30 /* BaseViewController.swift */; };
@@ -65,29 +69,41 @@
 
 /* Begin PBXFileReference section */
 		1505482B20599A9300B25A6A /* JigsawSwap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JigsawSwap.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1505482E20599A9300B25A6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1505483520599A9300B25A6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1505483820599A9300B25A6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1505483A20599A9300B25A6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1505483F20599A9300B25A6A /* JigsawSwapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JigsawSwapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1505484320599A9300B25A6A /* JigsawSwapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JigsawSwapTests.swift; sourceTree = "<group>"; };
 		1505484520599A9300B25A6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1505484A20599A9300B25A6A /* JigsawSwapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JigsawSwapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1505484E20599A9300B25A6A /* JigsawSwapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JigsawSwapUITests.swift; sourceTree = "<group>"; };
 		1505485020599A9300B25A6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1505485F2059AE2100B25A6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = JigsawSwap/Base.lproj/Localized.strings; sourceTree = "<group>"; };
-		150548612059AE3600B25A6A /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = JigsawSwap/pl.lproj/Localized.strings; sourceTree = "<group>"; };
 		1509099920A9ABCD003BC7B6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		153330782108A6DE00877DA9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		153330792108A6DE00877DA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1533307A2108A6DE00877DA9 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		1533307B2108A6DE00877DA9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1533307D2108A6DE00877DA9 /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
+		1533307E2108A6DE00877DA9 /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Bold.ttf"; sourceTree = "<group>"; };
+		1533307F2108A6DE00877DA9 /* NotoSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		153330802108A6DE00877DA9 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		153330812108A6DE00877DA9 /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Italic.ttf"; sourceTree = "<group>"; };
+		153330822108A6DE00877DA9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1533308E2108A88500877DA9 /* WallViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallViewModel.swift; sourceTree = "<group>"; };
+		1533308F2108A88500877DA9 /* WallView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallView.swift; sourceTree = "<group>"; };
+		153330902108A88500877DA9 /* WallTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallTableViewCell.swift; sourceTree = "<group>"; };
+		153330912108A88500877DA9 /* WallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallViewController.swift; sourceTree = "<group>"; };
+		153330972108A8C700877DA9 /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		153330992108A8C700877DA9 /* JigsawsForWallRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JigsawsForWallRequest.swift; sourceTree = "<group>"; };
+		1533309A2108A8C700877DA9 /* AddJigsawRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddJigsawRequest.swift; sourceTree = "<group>"; };
+		1533309B2108A8C700877DA9 /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		153330A12108A8F400877DA9 /* Jigsaw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Jigsaw.swift; sourceTree = "<group>"; };
+		153330A32108A90E00877DA9 /* FirebasePath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebasePath.swift; sourceTree = "<group>"; };
+		153330A42108A90F00877DA9 /* RequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
+		153330A82108A93500877DA9 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		153330AA2108A9B200877DA9 /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
 		1549AF472059B5B2000F657D /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		1549AF482059B5B2000F657D /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		1549AF492059B5B2000F657D /* UIAlert+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlert+Extensions.swift"; sourceTree = "<group>"; };
 		1549AF4A2059B5B3000F657D /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
 		1549AF4B2059B5B3000F657D /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
-		1549AF4D2059B936000F657D /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
-		1549AF4E2059B936000F657D /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Bold.ttf"; sourceTree = "<group>"; };
-		1549AF4F2059B937000F657D /* NotoSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
-		1549AF502059B937000F657D /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
-		1549AF512059B937000F657D /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Italic.ttf"; sourceTree = "<group>"; };
 		15725865209EDDB900B18F30 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		1572586A209EDEBC00B18F30 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		1572586C209EDED100B18F30 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -95,7 +111,7 @@
 		1579C9D920A2142C0069204C /* ValidationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationType.swift; sourceTree = "<group>"; };
 		157A9BBE20AB012000D3FCA3 /* RegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		157A9BBF20AB012000D3FCA3 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		158BFB14205B17400010A259 /* FlowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowManager.swift; sourceTree = "<group>"; };
+		158BFB14205B17400010A259 /* FlowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FlowManager.swift; path = ../Managers/FlowManager.swift; sourceTree = "<group>"; };
 		158BFB16205B1C010010A259 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		196CB5CE34927FF1539B0D63 /* Pods-JigsawSwap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JigsawSwap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JigsawSwap/Pods-JigsawSwap.debug.xcconfig"; sourceTree = "<group>"; };
 		8726F77D8D2482F78D475447 /* Pods-JigsawSwap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JigsawSwap.release.xcconfig"; path = "Pods/Target Support Files/Pods-JigsawSwap/Pods-JigsawSwap.release.xcconfig"; sourceTree = "<group>"; };
@@ -154,9 +170,11 @@
 			isa = PBXGroup;
 			children = (
 				158BFB16205B1C010010A259 /* GoogleService-Info.plist */,
+				153330962108A8C700877DA9 /* Network */,
+				153330A02108A8F400877DA9 /* Models */,
 				1579C9D620A20F050069204C /* Enums */,
 				158BFB13205B17200010A259 /* Managers */,
-				150548622059AE4500B25A6A /* Configuration */,
+				153330762108A6DE00877DA9 /* Resources */,
 				150548642059AF0E00B25A6A /* Extensions */,
 				1579C9D320A20C2B0069204C /* Subviews */,
 				15725863209EDD7300B18F30 /* Screens */,
@@ -182,22 +200,10 @@
 			path = JigsawSwapUITests;
 			sourceTree = "<group>";
 		};
-		150548622059AE4500B25A6A /* Configuration */ = {
-			isa = PBXGroup;
-			children = (
-				1549AF4C2059B91F000F657D /* Fonts */,
-				1505483A20599A9300B25A6A /* Info.plist */,
-				1505483720599A9300B25A6A /* LaunchScreen.storyboard */,
-				1505482E20599A9300B25A6A /* AppDelegate.swift */,
-				1505483520599A9300B25A6A /* Assets.xcassets */,
-				1505485E2059AE2100B25A6A /* Localized.strings */,
-			);
-			path = Configuration;
-			sourceTree = "<group>";
-		};
 		150548642059AF0E00B25A6A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				153330AA2108A9B200877DA9 /* CGFloat+Extensions.swift */,
 				1549AF482059B5B2000F657D /* UIColor+Extensions.swift */,
 				1549AF472059B5B2000F657D /* Date+Extensions.swift */,
 				1549AF4B2059B5B3000F657D /* String+Extensions.swift */,
@@ -207,21 +213,81 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		1549AF4C2059B91F000F657D /* Fonts */ = {
+		153330762108A6DE00877DA9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				1549AF502059B937000F657D /* LICENSE.txt */,
-				1549AF4E2059B936000F657D /* NotoSans-Bold.ttf */,
-				1549AF4F2059B937000F657D /* NotoSans-BoldItalic.ttf */,
-				1549AF512059B937000F657D /* NotoSans-Italic.ttf */,
-				1549AF4D2059B936000F657D /* NotoSans-Regular.ttf */,
+				153330772108A6DE00877DA9 /* Localizable.strings */,
+				153330792108A6DE00877DA9 /* Assets.xcassets */,
+				1533307A2108A6DE00877DA9 /* Launch Screen.storyboard */,
+				1533307B2108A6DE00877DA9 /* AppDelegate.swift */,
+				1533307C2108A6DE00877DA9 /* Fonts */,
+				153330822108A6DE00877DA9 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1533307C2108A6DE00877DA9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1533307D2108A6DE00877DA9 /* NotoSans-Regular.ttf */,
+				1533307E2108A6DE00877DA9 /* NotoSans-Bold.ttf */,
+				1533307F2108A6DE00877DA9 /* NotoSans-BoldItalic.ttf */,
+				153330802108A6DE00877DA9 /* LICENSE.txt */,
+				153330812108A6DE00877DA9 /* NotoSans-Italic.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		1533308D2108A88500877DA9 /* Wall */ = {
+			isa = PBXGroup;
+			children = (
+				1533308E2108A88500877DA9 /* WallViewModel.swift */,
+				1533308F2108A88500877DA9 /* WallView.swift */,
+				153330902108A88500877DA9 /* WallTableViewCell.swift */,
+				153330912108A88500877DA9 /* WallViewController.swift */,
+			);
+			path = Wall;
+			sourceTree = "<group>";
+		};
+		153330962108A8C700877DA9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				153330972108A8C700877DA9 /* ApiManager.swift */,
+				153330982108A8C700877DA9 /* Requests */,
+				1533309B2108A8C700877DA9 /* APIRequest.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		153330982108A8C700877DA9 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				153330992108A8C700877DA9 /* JigsawsForWallRequest.swift */,
+				1533309A2108A8C700877DA9 /* AddJigsawRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		153330A02108A8F400877DA9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				153330A12108A8F400877DA9 /* Jigsaw.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		153330A72108A93500877DA9 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				153330A82108A93500877DA9 /* BaseTableViewCell.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		15725863209EDD7300B18F30 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				1533308D2108A88500877DA9 /* Wall */,
 				157A9BBD20AB009000D3FCA3 /* Register */,
 				15725867209EDE4B00B18F30 /* Base */,
 				15725864209EDDA600B18F30 /* Login */,
@@ -250,6 +316,7 @@
 		1579C9D320A20C2B0069204C /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
+				153330A72108A93500877DA9 /* Base */,
 				1579C9D420A20C5B0069204C /* ValidationTextField.swift */,
 			);
 			path = Subviews;
@@ -258,6 +325,8 @@
 		1579C9D620A20F050069204C /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				153330A32108A90E00877DA9 /* FirebasePath.swift */,
+				153330A42108A90F00877DA9 /* RequestType.swift */,
 				1579C9D920A2142C0069204C /* ValidationType.swift */,
 			);
 			path = Enums;
@@ -311,7 +380,6 @@
 				1505482920599A9300B25A6A /* Resources */,
 				1505485C20599ACB00B25A6A /* TODO as warning */,
 				EC59056A2FF892999D0A10D6 /* [CP] Embed Pods Frameworks */,
-				32F76FB95AF2C047B0A3DF0A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -410,15 +478,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1549AF582059B937000F657D /* NotoSans-BoldItalic.ttf in Resources */,
-				1549AF522059B937000F657D /* NotoSans-Regular.ttf in Resources */,
+				1533308C2108A6DE00877DA9 /* Info.plist in Resources */,
+				1533308B2108A6DE00877DA9 /* NotoSans-Italic.ttf in Resources */,
+				153330872108A6DE00877DA9 /* NotoSans-Regular.ttf in Resources */,
+				153330842108A6DE00877DA9 /* Assets.xcassets in Resources */,
 				158BFB17205B1C020010A259 /* GoogleService-Info.plist in Resources */,
-				150548602059AE2100B25A6A /* Localized.strings in Resources */,
-				1505483920599A9300B25A6A /* LaunchScreen.storyboard in Resources */,
-				1549AF552059B937000F657D /* NotoSans-Bold.ttf in Resources */,
-				1505483620599A9300B25A6A /* Assets.xcassets in Resources */,
-				1549AF5B2059B937000F657D /* LICENSE.txt in Resources */,
-				1549AF5E2059B937000F657D /* NotoSans-Italic.ttf in Resources */,
+				153330852108A6DE00877DA9 /* Launch Screen.storyboard in Resources */,
+				153330832108A6DE00877DA9 /* Localizable.strings in Resources */,
+				153330882108A6DE00877DA9 /* NotoSans-Bold.ttf in Resources */,
+				1533308A2108A6DE00877DA9 /* LICENSE.txt in Resources */,
+				153330892108A6DE00877DA9 /* NotoSans-BoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,11 +495,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1549AF5F2059B937000F657D /* NotoSans-Italic.ttf in Resources */,
-				1549AF5C2059B937000F657D /* LICENSE.txt in Resources */,
-				1549AF592059B937000F657D /* NotoSans-BoldItalic.ttf in Resources */,
-				1549AF562059B937000F657D /* NotoSans-Bold.ttf in Resources */,
-				1549AF532059B937000F657D /* NotoSans-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,11 +502,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1549AF602059B937000F657D /* NotoSans-Italic.ttf in Resources */,
-				1549AF5D2059B937000F657D /* LICENSE.txt in Resources */,
-				1549AF5A2059B937000F657D /* NotoSans-BoldItalic.ttf in Resources */,
-				1549AF572059B937000F657D /* NotoSans-Bold.ttf in Resources */,
-				1549AF542059B937000F657D /* NotoSans-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,24 +521,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "#Script to make TODO a Warning\nif [ \"${CONFIGURATION}\" = \"Debug\" ]\nthen\n#TAGS is a keyword to make line as warning\nTAGS=\"TODO:\"\necho \"searching ${SRCROOT} for ${TAGS}\"\nfind \"${SRCROOT}\" \\( -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"\nfi";
-		};
-		32F76FB95AF2C047B0A3DF0A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-JigsawSwap/Pods-JigsawSwap-resources.sh",
-				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle,
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JigsawSwap/Pods-JigsawSwap-resources.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 		835EF673D310C6E8D3BBFC93 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -511,7 +552,6 @@
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/KVNProgress/KVNProgress.framework",
-				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
@@ -526,7 +566,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KVNProgress.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
@@ -547,20 +586,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				158BFB09205AF52A0010A259 /* String+Extensions.swift in Sources */,
-				1505482F20599A9300B25A6A /* AppDelegate.swift in Sources */,
 				158BFB15205B17400010A259 /* FlowManager.swift in Sources */,
+				153330AB2108A9B200877DA9 /* CGFloat+Extensions.swift in Sources */,
+				153330932108A88500877DA9 /* WallView.swift in Sources */,
 				158BFB08205AF5280010A259 /* UIColor+Extensions.swift in Sources */,
+				153330A92108A93500877DA9 /* BaseTableViewCell.swift in Sources */,
 				158BFB0A205AF52D0010A259 /* UIAlert+Extensions.swift in Sources */,
 				1572586D209EDED100B18F30 /* BaseViewController.swift in Sources */,
+				153330952108A88500877DA9 /* WallViewController.swift in Sources */,
 				1579C9DA20A2142C0069204C /* ValidationType.swift in Sources */,
+				1533309D2108A8C700877DA9 /* JigsawsForWallRequest.swift in Sources */,
 				158BFB0B205AF52F0010A259 /* UIFont+Extensions.swift in Sources */,
+				1533309F2108A8C700877DA9 /* APIRequest.swift in Sources */,
+				153330862108A6DE00877DA9 /* AppDelegate.swift in Sources */,
 				1572586B209EDEBC00B18F30 /* BaseView.swift in Sources */,
 				157A9BC220AB012000D3FCA3 /* RegisterViewController.swift in Sources */,
+				1533309C2108A8C700877DA9 /* ApiManager.swift in Sources */,
+				153330A62108A90F00877DA9 /* RequestType.swift in Sources */,
+				153330922108A88500877DA9 /* WallViewModel.swift in Sources */,
 				15725866209EDDB900B18F30 /* LoginView.swift in Sources */,
+				1533309E2108A8C700877DA9 /* AddJigsawRequest.swift in Sources */,
 				158BFB07205AF5250010A259 /* Date+Extensions.swift in Sources */,
 				157A9BC120AB012000D3FCA3 /* RegisterView.swift in Sources */,
+				153330A22108A8F500877DA9 /* Jigsaw.swift in Sources */,
+				153330942108A88500877DA9 /* WallTableViewCell.swift in Sources */,
 				1509099A20A9ABCD003BC7B6 /* LoginViewController.swift in Sources */,
 				1579C9D520A20C5B0069204C /* ValidationTextField.swift in Sources */,
+				153330A52108A90F00877DA9 /* FirebasePath.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,21 +648,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1505483720599A9300B25A6A /* LaunchScreen.storyboard */ = {
+		153330772108A6DE00877DA9 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1505483820599A9300B25A6A /* Base */,
+				153330782108A6DE00877DA9 /* en */,
 			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		1505485E2059AE2100B25A6A /* Localized.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1505485F2059AE2100B25A6A /* Base */,
-				150548612059AE3600B25A6A /* pl */,
-			);
-			name = Localized.strings;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -732,7 +775,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2FP33MYDL3;
-				INFOPLIST_FILE = "$(SRCROOT)/JigsawSwap/Configuration/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/JigsawSwap/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dominika.czarnecka.com.JigsawSwap;
@@ -749,7 +792,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2FP33MYDL3;
-				INFOPLIST_FILE = "$(SRCROOT)/JigsawSwap/Configuration/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/JigsawSwap/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dominika.czarnecka.com.JigsawSwap;
