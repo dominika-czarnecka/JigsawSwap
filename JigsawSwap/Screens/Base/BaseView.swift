@@ -6,14 +6,14 @@ class BaseView: UIView {
         fatalError("You have to override this function")
     }
 
-    init() {
-        super.init(frame: .zero)
-        configureConstraints()
+    convenience init() {
+        self.init(frame: .zero)
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         configureConstraints()
+        backgroundColor = .lightPink
     }
     
     @available(*, unavailable, message: "Please use init() instead")

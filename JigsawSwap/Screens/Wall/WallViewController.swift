@@ -1,6 +1,7 @@
 import Foundation
 import RxSwift
 import FirebaseDatabase
+import FirebaseStorage
 
 final class WallViewController: BaseViewController<WallView> {
     private let reuseIdentifier = "cell"
@@ -26,21 +27,21 @@ final class WallViewController: BaseViewController<WallView> {
             }
             .disposed(by: disposeBag)
     }
-    
+    //TODO: Refresh after a while wjen there was no internet
     private func getJigsaws() {
         let response: Observable<[String: Jigsaw]> = apiManager.send(apiRequest: JigsawsForWallRequest())
             
         response
             .observeOn(MainScheduler.instance)
+            //.debounce(5, scheduler: MainScheduler.instance)
             .map({ (dict) -> [Jigsaw] in
                 return Array(dict.values)
             })
             .subscribe(onNext: { [weak self] jigsaws in
                 self?.viewModel.jigsaws.accept(jigsaws)
             }, onError: { [weak self] error in
-                let alert = UIAlertController(title: "General.Error".localized, message: error.localizedDescription, preferredStyle: .alert)
+                let alert = UIAlertController(withOkAction: nil, title: "General.Error".localized, message: error.localizedDescription)
                 self?.present(alert, animated: true, completion: nil)
-
             })
             .disposed(by: disposeBag)
     }
@@ -65,7 +66,7 @@ final class WallViewController: BaseViewController<WallView> {
     }
     
     @objc private func addButtonAction() {
-        
+        present(AddJigsawViewController(), animated: true, completion: nil)
     }
     
     //TODO: Add refresh

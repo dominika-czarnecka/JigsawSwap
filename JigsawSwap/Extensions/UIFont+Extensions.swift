@@ -3,7 +3,6 @@ import UIKit
 extension UIFont {
     
     func appFont(bold: Bool = false, italic: Bool = false, fontSize: CGFloat) -> UIFont {
-        
         var fontName = "NotoSans-"
         
         if !bold && !italic {

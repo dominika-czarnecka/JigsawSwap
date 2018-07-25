@@ -6,11 +6,12 @@ inhibit_all_warnings!
 use_frameworks!
 
 def import_common_pods
-    
+
     pod 'KVNProgress'
     pod 'IQKeyboardManager'
     pod 'Firebase/Auth'
     pod 'Firebase/Database'
+    pod 'Firebase/Storage'
     pod 'RxSwift'
     pod 'RxCocoa'
     pod 'RxDataSources'

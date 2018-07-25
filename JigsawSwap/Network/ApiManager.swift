@@ -2,7 +2,7 @@ import RxSwift
 import RxCocoa
 
 class ApiManager {
-    private let baseURL = URL(string: "https://jigsawswap-395bd.firebaseio.com/")!
+    private let baseURL = URL(string: "https://jigsawswap-395bd")!
     
     func send<T: Codable>(apiRequest: APIRequest) -> Observable<T> {
         return Observable<T>.create { [unowned self] observer in

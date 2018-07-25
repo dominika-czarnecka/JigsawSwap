@@ -33,6 +33,11 @@
 		153330A62108A90F00877DA9 /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153330A42108A90F00877DA9 /* RequestType.swift */; };
 		153330A92108A93500877DA9 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153330A82108A93500877DA9 /* BaseTableViewCell.swift */; };
 		153330AB2108A9B200877DA9 /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153330AA2108A9B200877DA9 /* CGFloat+Extensions.swift */; };
+		153330B02108B10000877DA9 /* AddJigsawViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153330AD2108B10000877DA9 /* AddJigsawViewModel.swift */; };
+		153330B12108B10000877DA9 /* AddJigsawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153330AE2108B10000877DA9 /* AddJigsawView.swift */; };
+		153330B22108B10000877DA9 /* AddJigsawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153330AF2108B10000877DA9 /* AddJigsawViewController.swift */; };
+		153330B52108B12800877DA9 /* SmallButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153330B32108B12800877DA9 /* SmallButton.swift */; };
+		153330B62108B12800877DA9 /* NormalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153330B42108B12800877DA9 /* NormalButton.swift */; };
 		15725866209EDDB900B18F30 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15725865209EDDB900B18F30 /* LoginView.swift */; };
 		1572586B209EDEBC00B18F30 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1572586A209EDEBC00B18F30 /* BaseView.swift */; };
 		1572586D209EDED100B18F30 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1572586C209EDED100B18F30 /* BaseViewController.swift */; };
@@ -99,6 +104,11 @@
 		153330A42108A90F00877DA9 /* RequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
 		153330A82108A93500877DA9 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		153330AA2108A9B200877DA9 /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
+		153330AD2108B10000877DA9 /* AddJigsawViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddJigsawViewModel.swift; sourceTree = "<group>"; };
+		153330AE2108B10000877DA9 /* AddJigsawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddJigsawView.swift; sourceTree = "<group>"; };
+		153330AF2108B10000877DA9 /* AddJigsawViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddJigsawViewController.swift; sourceTree = "<group>"; };
+		153330B32108B12800877DA9 /* SmallButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmallButton.swift; sourceTree = "<group>"; };
+		153330B42108B12800877DA9 /* NormalButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalButton.swift; sourceTree = "<group>"; };
 		1549AF472059B5B2000F657D /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		1549AF482059B5B2000F657D /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		1549AF492059B5B2000F657D /* UIAlert+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlert+Extensions.swift"; sourceTree = "<group>"; };
@@ -284,9 +294,20 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		153330AC2108B10000877DA9 /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				153330AD2108B10000877DA9 /* AddJigsawViewModel.swift */,
+				153330AE2108B10000877DA9 /* AddJigsawView.swift */,
+				153330AF2108B10000877DA9 /* AddJigsawViewController.swift */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
 		15725863209EDD7300B18F30 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				153330AC2108B10000877DA9 /* Add */,
 				1533308D2108A88500877DA9 /* Wall */,
 				157A9BBD20AB009000D3FCA3 /* Register */,
 				15725867209EDE4B00B18F30 /* Base */,
@@ -317,6 +338,8 @@
 			isa = PBXGroup;
 			children = (
 				153330A72108A93500877DA9 /* Base */,
+				153330B42108B12800877DA9 /* NormalButton.swift */,
+				153330B32108B12800877DA9 /* SmallButton.swift */,
 				1579C9D420A20C5B0069204C /* ValidationTextField.swift */,
 			);
 			path = Subviews;
@@ -346,8 +369,7 @@
 			children = (
 				158BFB14205B17400010A259 /* FlowManager.swift */,
 			);
-			name = Managers;
-			path = "New Group";
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		52301DF9AC80FC24FEF33457 /* Pods */ = {
@@ -586,7 +608,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				158BFB09205AF52A0010A259 /* String+Extensions.swift in Sources */,
+				153330B52108B12800877DA9 /* SmallButton.swift in Sources */,
 				158BFB15205B17400010A259 /* FlowManager.swift in Sources */,
+				153330B02108B10000877DA9 /* AddJigsawViewModel.swift in Sources */,
 				153330AB2108A9B200877DA9 /* CGFloat+Extensions.swift in Sources */,
 				153330932108A88500877DA9 /* WallView.swift in Sources */,
 				158BFB08205AF5280010A259 /* UIColor+Extensions.swift in Sources */,
@@ -597,6 +621,7 @@
 				1579C9DA20A2142C0069204C /* ValidationType.swift in Sources */,
 				1533309D2108A8C700877DA9 /* JigsawsForWallRequest.swift in Sources */,
 				158BFB0B205AF52F0010A259 /* UIFont+Extensions.swift in Sources */,
+				153330B12108B10000877DA9 /* AddJigsawView.swift in Sources */,
 				1533309F2108A8C700877DA9 /* APIRequest.swift in Sources */,
 				153330862108A6DE00877DA9 /* AppDelegate.swift in Sources */,
 				1572586B209EDEBC00B18F30 /* BaseView.swift in Sources */,
@@ -604,9 +629,11 @@
 				1533309C2108A8C700877DA9 /* ApiManager.swift in Sources */,
 				153330A62108A90F00877DA9 /* RequestType.swift in Sources */,
 				153330922108A88500877DA9 /* WallViewModel.swift in Sources */,
+				153330B22108B10000877DA9 /* AddJigsawViewController.swift in Sources */,
 				15725866209EDDB900B18F30 /* LoginView.swift in Sources */,
 				1533309E2108A8C700877DA9 /* AddJigsawRequest.swift in Sources */,
 				158BFB07205AF5250010A259 /* Date+Extensions.swift in Sources */,
+				153330B62108B12800877DA9 /* NormalButton.swift in Sources */,
 				157A9BC120AB012000D3FCA3 /* RegisterView.swift in Sources */,
 				153330A22108A8F500877DA9 /* Jigsaw.swift in Sources */,
 				153330942108A88500877DA9 /* WallTableViewCell.swift in Sources */,

@@ -22,15 +22,14 @@ class WallTableViewCell: BaseTableViewCell {
         return textView
     }()
     //TODO: Make hit area at least 44 p if this stays
-    let tradeButton: UIButton = {
-        let button = UIButton()
+    let tradeButton: SmallButton = {
+        let button = SmallButton()
         button.setImage(#imageLiteral(resourceName: "trade"), for: .normal)
-        button.imageView?.tintColor = .mainGray
         return button
     }()
     
-    let favoriteButton: UIButton = {
-        let buttton = UIButton()
+    let favoriteButton: SmallButton = {
+        let buttton = SmallButton()
         buttton.setImage(#imageLiteral(resourceName: "star"), for: .normal)
         buttton.tintColor = .mainGray
         return buttton
@@ -70,20 +69,16 @@ class WallTableViewCell: BaseTableViewCell {
         ])
         addConstraints([
             tradeButton.leftAnchor.constraint(equalTo: leftAnchor, constant: CGFloat.LayoutDimensions.margin),
-            tradeButton.heightAnchor.constraint(equalToConstant: CGFloat.LayoutDimensions.standardButtonHeight),
-            tradeButton.widthAnchor.constraint(equalTo: tradeButton.heightAnchor),
             tradeButton.topAnchor.constraint(equalTo: topAnchor, constant: CGFloat.LayoutDimensions.margin)
         ])
         addConstraints([
             favoriteButton.rightAnchor.constraint(equalTo: rightAnchor, constant: -CGFloat.LayoutDimensions.margin),
-            favoriteButton.heightAnchor.constraint(equalToConstant: CGFloat.LayoutDimensions.standardButtonHeight),
-            favoriteButton.widthAnchor.constraint(equalTo: tradeButton.heightAnchor),
             favoriteButton.topAnchor.constraint(equalTo: tradeButton.topAnchor)
         ])
         addConstraints([
             piecesCountImageView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -CGFloat.LayoutDimensions.margin),
             piecesCountImageView.leftAnchor.constraint(equalTo: leftAnchor, constant: CGFloat.LayoutDimensions.margin),
-            piecesCountImageView.heightAnchor.constraint(equalToConstant: CGFloat.LayoutDimensions.standardButtonHeight * 0.7),
+            piecesCountImageView.heightAnchor.constraint(equalToConstant: 20),
             piecesCountImageView.widthAnchor.constraint(equalTo: piecesCountImageView.heightAnchor)
         ])
         addConstraints([

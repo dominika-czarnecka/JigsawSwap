@@ -4,20 +4,26 @@ import RxCocoa
 
 final class ValidationTextField: UITextField {
     let errorMessage: String?
-    let defaultString: String?
     let validationRegex: String
-
+    //TODO: Think about defaultString
     init(_ textFieldType: ValidationType, defaultString: String? = nil) {
-        self.errorMessage = textFieldType.errorMessage()
-        self.defaultString = defaultString
-        self.validationRegex = textFieldType.validationRegex()
+        errorMessage = textFieldType.errorMessage()
+        validationRegex = textFieldType.validationRegex()
         super.init(frame: .zero)
-        self.placeholder = textFieldType.placeholder()
+//        if let defaultString = defaultString {
+//            text = defaultString
+//        }
+        placeholder = textFieldType.placeholder()
+        keyboardType = textFieldType.keyboardType()
+        textColor = .mainPink
+        autocorrectionType = .no
+        backgroundColor = .white
+        layer.cornerRadius = 5
         
         translatesAutoresizingMaskIntoConstraints = false
         addConstraints([
             heightAnchor.constraint(equalToConstant: 50),
-            widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width * 0.5)
+            widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width * 0.8)
         ])
     }
     

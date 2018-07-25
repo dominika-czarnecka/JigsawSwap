@@ -5,6 +5,7 @@ enum ValidationType {
     case name
     case surname
     case password
+    case int
     case none
     
     func generateCustomPasswordRegex(oneLowercased: Bool = true, oneUppercased: Bool = true, oneNumber: Bool = true, oneSpecial: Bool = true, minLenght: Int = 8, maxLenght: Int = 64) -> String {
@@ -30,8 +31,10 @@ enum ValidationType {
             return "^[A-Z]+[a-z]*([ -][A-Z][a-z]*)*?$"
         case .password:
             return "^(?=.*[a-ząćęłńóśźż])(?=.*[A-ZĄĆĘŁŃÓŚŹŻ])(?=.*\\d)(?=.*[ !\"\"#()*+,\\-.\\/:;&'<=>?%@^_`{|}~$\\[\\\\\\]])[A-Za-ząćęłńóśźżĄĆĘŁŃÓŚŹŻ\\d !\"\"#()*+,\\-.\\/:;&'<=>?%@^_`{|}~$\\[\\\\\\]]{8,64}"
+        case .int:
+            return "^[0-9]+$"
         case .none:
-            return ""
+            return "{,254}"
         }
     }
     
@@ -45,6 +48,8 @@ enum ValidationType {
             return "ValidationRegex.Mail.ErrorMessage".localized
         case .password:
             return "ValidationRegex.Password.ErrorMessage".localized
+        case .int:
+            return "ValidationRegex.Int.ErrorMessage"
         case .none:
             return "ValidationRegex.None.ErrorMessage".localized
         }
@@ -60,8 +65,23 @@ enum ValidationType {
             return "ValidationRegex.Surname.Placholder".localized
         case .password:
             return "ValidationRegex.Password.Placholder".localized
+        case .int:
+            return "ValidationRegex.Int.Placholder".localized
         case .none:
             return "ValidationRegex.None.Placholder".localized
+        }
+    }
+    
+    func keyboardType() -> UIKeyboardType {
+        switch self {
+        case .mail:
+            return .emailAddress
+        case .name, .surname:
+            return .namePhonePad
+        case .password, .none:
+            return .default
+        case .int:
+            return .numberPad
         }
     }
 }
