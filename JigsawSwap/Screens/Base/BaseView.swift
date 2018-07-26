@@ -13,7 +13,7 @@ class BaseView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         configureConstraints()
-        backgroundColor = .lightPink
+        backgroundColor = .lightGray
     }
     
     @available(*, unavailable, message: "Please use init() instead")

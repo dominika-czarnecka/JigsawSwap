@@ -10,16 +10,7 @@
 		1505484420599A9300B25A6A /* JigsawSwapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1505484320599A9300B25A6A /* JigsawSwapTests.swift */; };
 		1505484F20599A9300B25A6A /* JigsawSwapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1505484E20599A9300B25A6A /* JigsawSwapUITests.swift */; };
 		1509099A20A9ABCD003BC7B6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1509099920A9ABCD003BC7B6 /* LoginViewController.swift */; };
-		153330832108A6DE00877DA9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 153330772108A6DE00877DA9 /* Localizable.strings */; };
-		153330842108A6DE00877DA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 153330792108A6DE00877DA9 /* Assets.xcassets */; };
-		153330852108A6DE00877DA9 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1533307A2108A6DE00877DA9 /* Launch Screen.storyboard */; };
-		153330862108A6DE00877DA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1533307B2108A6DE00877DA9 /* AppDelegate.swift */; };
-		153330872108A6DE00877DA9 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1533307D2108A6DE00877DA9 /* NotoSans-Regular.ttf */; };
-		153330882108A6DE00877DA9 /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1533307E2108A6DE00877DA9 /* NotoSans-Bold.ttf */; };
-		153330892108A6DE00877DA9 /* NotoSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1533307F2108A6DE00877DA9 /* NotoSans-BoldItalic.ttf */; };
-		1533308A2108A6DE00877DA9 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 153330802108A6DE00877DA9 /* LICENSE.txt */; };
-		1533308B2108A6DE00877DA9 /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 153330812108A6DE00877DA9 /* NotoSans-Italic.ttf */; };
-		1533308C2108A6DE00877DA9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 153330822108A6DE00877DA9 /* Info.plist */; };
+		1526D69D20CC34D200DE1298 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		153330922108A88500877DA9 /* WallViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1533308E2108A88500877DA9 /* WallViewModel.swift */; };
 		153330932108A88500877DA9 /* WallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1533308F2108A88500877DA9 /* WallView.swift */; };
 		153330942108A88500877DA9 /* WallTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153330902108A88500877DA9 /* WallTableViewCell.swift */; };
@@ -27,17 +18,32 @@
 		1533309C2108A8C700877DA9 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153330972108A8C700877DA9 /* ApiManager.swift */; };
 		1533309D2108A8C700877DA9 /* JigsawsForWallRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153330992108A8C700877DA9 /* JigsawsForWallRequest.swift */; };
 		1533309E2108A8C700877DA9 /* AddJigsawRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1533309A2108A8C700877DA9 /* AddJigsawRequest.swift */; };
-		1533309F2108A8C700877DA9 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1533309B2108A8C700877DA9 /* APIRequest.swift */; };
 		153330A22108A8F500877DA9 /* Jigsaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153330A12108A8F400877DA9 /* Jigsaw.swift */; };
-		153330A52108A90F00877DA9 /* FirebasePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153330A32108A90E00877DA9 /* FirebasePath.swift */; };
 		153330A62108A90F00877DA9 /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153330A42108A90F00877DA9 /* RequestType.swift */; };
 		153330A92108A93500877DA9 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153330A82108A93500877DA9 /* BaseTableViewCell.swift */; };
 		153330AB2108A9B200877DA9 /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153330AA2108A9B200877DA9 /* CGFloat+Extensions.swift */; };
 		153330B02108B10000877DA9 /* AddJigsawViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153330AD2108B10000877DA9 /* AddJigsawViewModel.swift */; };
 		153330B12108B10000877DA9 /* AddJigsawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153330AE2108B10000877DA9 /* AddJigsawView.swift */; };
 		153330B22108B10000877DA9 /* AddJigsawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153330AF2108B10000877DA9 /* AddJigsawViewController.swift */; };
-		153330B52108B12800877DA9 /* SmallButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153330B32108B12800877DA9 /* SmallButton.swift */; };
 		153330B62108B12800877DA9 /* NormalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153330B42108B12800877DA9 /* NormalButton.swift */; };
+		153330C92109C3FF00877DA9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 153330B92109C3FF00877DA9 /* Localizable.strings */; };
+		153330CB2109C3FF00877DA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 153330BD2109C3FF00877DA9 /* Assets.xcassets */; };
+		153330CC2109C3FF00877DA9 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 153330C02109C3FF00877DA9 /* Launch Screen.storyboard */; };
+		153330CD2109C3FF00877DA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153330C12109C3FF00877DA9 /* AppDelegate.swift */; };
+		153330CE2109C3FF00877DA9 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 153330C32109C3FF00877DA9 /* NotoSans-Regular.ttf */; };
+		153330CF2109C3FF00877DA9 /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 153330C42109C3FF00877DA9 /* NotoSans-Bold.ttf */; };
+		153330D02109C3FF00877DA9 /* NotoSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 153330C52109C3FF00877DA9 /* NotoSans-BoldItalic.ttf */; };
+		153330D12109C3FF00877DA9 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 153330C62109C3FF00877DA9 /* LICENSE.txt */; };
+		153330D22109C3FF00877DA9 /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 153330C72109C3FF00877DA9 /* NotoSans-Italic.ttf */; };
+		153330D32109C3FF00877DA9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 153330C82109C3FF00877DA9 /* Info.plist */; };
+		153330D42109C41B00877DA9 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1533309B2108A8C700877DA9 /* APIRequest.swift */; };
+		153330D52109C52800877DA9 /* FirebasePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153330A32108A90E00877DA9 /* FirebasePath.swift */; };
+		153330D62109C53B00877DA9 /* SmallButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153330B32108B12800877DA9 /* SmallButton.swift */; };
+		153330D82109C56E00877DA9 /* PostJigsawImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153330D72109C56E00877DA9 /* PostJigsawImage.swift */; };
+		153330DA2109C57C00877DA9 /* GetJigsawImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153330D92109C57C00877DA9 /* GetJigsawImage.swift */; };
+		153330DD2109C67200877DA9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 153330DF2109C67200877DA9 /* InfoPlist.strings */; };
+		153330E12109C6E900877DA9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 158BFB16205B1C010010A259 /* GoogleService-Info.plist */; };
+		156F565820FF83A500366C38 /* UIImagePickerController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156F565720FF83A500366C38 /* UIImagePickerController+Rx.swift */; };
 		15725866209EDDB900B18F30 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15725865209EDDB900B18F30 /* LoginView.swift */; };
 		1572586B209EDEBC00B18F30 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1572586A209EDEBC00B18F30 /* BaseView.swift */; };
 		1572586D209EDED100B18F30 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1572586C209EDED100B18F30 /* BaseViewController.swift */; };
@@ -51,7 +57,6 @@
 		158BFB0A205AF52D0010A259 /* UIAlert+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1549AF492059B5B2000F657D /* UIAlert+Extensions.swift */; };
 		158BFB0B205AF52F0010A259 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1549AF4A2059B5B3000F657D /* UIFont+Extensions.swift */; };
 		158BFB15205B17400010A259 /* FlowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158BFB14205B17400010A259 /* FlowManager.swift */; };
-		158BFB17205B1C020010A259 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 158BFB16205B1C010010A259 /* GoogleService-Info.plist */; };
 		555E7B2AAC31B1866C5939A7 /* Pods_JigsawSwap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B529D695EDDF7C85A047D6BD /* Pods_JigsawSwap.framework */; };
 /* End PBXBuildFile section */
 
@@ -81,16 +86,6 @@
 		1505484E20599A9300B25A6A /* JigsawSwapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JigsawSwapUITests.swift; sourceTree = "<group>"; };
 		1505485020599A9300B25A6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1509099920A9ABCD003BC7B6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		153330782108A6DE00877DA9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		153330792108A6DE00877DA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1533307A2108A6DE00877DA9 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		1533307B2108A6DE00877DA9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1533307D2108A6DE00877DA9 /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
-		1533307E2108A6DE00877DA9 /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Bold.ttf"; sourceTree = "<group>"; };
-		1533307F2108A6DE00877DA9 /* NotoSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
-		153330802108A6DE00877DA9 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
-		153330812108A6DE00877DA9 /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Italic.ttf"; sourceTree = "<group>"; };
-		153330822108A6DE00877DA9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1533308E2108A88500877DA9 /* WallViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallViewModel.swift; sourceTree = "<group>"; };
 		1533308F2108A88500877DA9 /* WallView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallView.swift; sourceTree = "<group>"; };
 		153330902108A88500877DA9 /* WallTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallTableViewCell.swift; sourceTree = "<group>"; };
@@ -109,11 +104,29 @@
 		153330AF2108B10000877DA9 /* AddJigsawViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddJigsawViewController.swift; sourceTree = "<group>"; };
 		153330B32108B12800877DA9 /* SmallButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmallButton.swift; sourceTree = "<group>"; };
 		153330B42108B12800877DA9 /* NormalButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalButton.swift; sourceTree = "<group>"; };
+		153330BA2109C3FF00877DA9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		153330BD2109C3FF00877DA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		153330BE2109C3FF00877DA9 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		153330C02109C3FF00877DA9 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		153330C12109C3FF00877DA9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		153330C32109C3FF00877DA9 /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
+		153330C42109C3FF00877DA9 /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Bold.ttf"; sourceTree = "<group>"; };
+		153330C52109C3FF00877DA9 /* NotoSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		153330C62109C3FF00877DA9 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		153330C72109C3FF00877DA9 /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Italic.ttf"; sourceTree = "<group>"; };
+		153330C82109C3FF00877DA9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		153330D72109C56E00877DA9 /* PostJigsawImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostJigsawImage.swift; sourceTree = "<group>"; };
+		153330D92109C57C00877DA9 /* GetJigsawImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetJigsawImage.swift; sourceTree = "<group>"; };
+		153330DE2109C67200877DA9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		153330E02109C67400877DA9 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1549AF472059B5B2000F657D /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		1549AF482059B5B2000F657D /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		1549AF492059B5B2000F657D /* UIAlert+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlert+Extensions.swift"; sourceTree = "<group>"; };
 		1549AF4A2059B5B3000F657D /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
 		1549AF4B2059B5B3000F657D /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		156F565720FF83A500366C38 /* UIImagePickerController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+Rx.swift"; sourceTree = "<group>"; };
+		156F565E2100BC7300366C38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		156F56602100BC7400366C38 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		15725865209EDDB900B18F30 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		1572586A209EDEBC00B18F30 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		1572586C209EDED100B18F30 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -163,6 +176,7 @@
 				1505482C20599A9300B25A6A /* Products */,
 				52301DF9AC80FC24FEF33457 /* Pods */,
 				E60DA5FDB5D097E52A86E3F6 /* Frameworks */,
+				153330B72109C3A600877DA9 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -179,12 +193,11 @@
 		1505482D20599A9300B25A6A /* JigsawSwap */ = {
 			isa = PBXGroup;
 			children = (
-				158BFB16205B1C010010A259 /* GoogleService-Info.plist */,
+				153330B82109C3FF00877DA9 /* Resources */,
 				153330962108A8C700877DA9 /* Network */,
 				153330A02108A8F400877DA9 /* Models */,
 				1579C9D620A20F050069204C /* Enums */,
 				158BFB13205B17200010A259 /* Managers */,
-				153330762108A6DE00877DA9 /* Resources */,
 				150548642059AF0E00B25A6A /* Extensions */,
 				1579C9D320A20C2B0069204C /* Subviews */,
 				15725863209EDD7300B18F30 /* Screens */,
@@ -219,33 +232,9 @@
 				1549AF4B2059B5B3000F657D /* String+Extensions.swift */,
 				1549AF492059B5B2000F657D /* UIAlert+Extensions.swift */,
 				1549AF4A2059B5B3000F657D /* UIFont+Extensions.swift */,
+				156F565720FF83A500366C38 /* UIImagePickerController+Rx.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		153330762108A6DE00877DA9 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				153330772108A6DE00877DA9 /* Localizable.strings */,
-				153330792108A6DE00877DA9 /* Assets.xcassets */,
-				1533307A2108A6DE00877DA9 /* Launch Screen.storyboard */,
-				1533307B2108A6DE00877DA9 /* AppDelegate.swift */,
-				1533307C2108A6DE00877DA9 /* Fonts */,
-				153330822108A6DE00877DA9 /* Info.plist */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		1533307C2108A6DE00877DA9 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				1533307D2108A6DE00877DA9 /* NotoSans-Regular.ttf */,
-				1533307E2108A6DE00877DA9 /* NotoSans-Bold.ttf */,
-				1533307F2108A6DE00877DA9 /* NotoSans-BoldItalic.ttf */,
-				153330802108A6DE00877DA9 /* LICENSE.txt */,
-				153330812108A6DE00877DA9 /* NotoSans-Italic.ttf */,
-			);
-			path = Fonts;
 			sourceTree = "<group>";
 		};
 		1533308D2108A88500877DA9 /* Wall */ = {
@@ -272,6 +261,8 @@
 		153330982108A8C700877DA9 /* Requests */ = {
 			isa = PBXGroup;
 			children = (
+				153330D92109C57C00877DA9 /* GetJigsawImage.swift */,
+				153330D72109C56E00877DA9 /* PostJigsawImage.swift */,
 				153330992108A8C700877DA9 /* JigsawsForWallRequest.swift */,
 				1533309A2108A8C700877DA9 /* AddJigsawRequest.swift */,
 			);
@@ -302,6 +293,41 @@
 				153330AF2108B10000877DA9 /* AddJigsawViewController.swift */,
 			);
 			path = Add;
+			sourceTree = "<group>";
+		};
+		153330B72109C3A600877DA9 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				156F565F2100BC7300366C38 /* InfoPlist.strings */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		153330B82109C3FF00877DA9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				158BFB16205B1C010010A259 /* GoogleService-Info.plist */,
+				153330B92109C3FF00877DA9 /* Localizable.strings */,
+				153330BD2109C3FF00877DA9 /* Assets.xcassets */,
+				153330C02109C3FF00877DA9 /* Launch Screen.storyboard */,
+				153330C12109C3FF00877DA9 /* AppDelegate.swift */,
+				153330C22109C3FF00877DA9 /* Fonts */,
+				153330C82109C3FF00877DA9 /* Info.plist */,
+				153330DF2109C67200877DA9 /* InfoPlist.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		153330C22109C3FF00877DA9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				153330C32109C3FF00877DA9 /* NotoSans-Regular.ttf */,
+				153330C42109C3FF00877DA9 /* NotoSans-Bold.ttf */,
+				153330C52109C3FF00877DA9 /* NotoSans-BoldItalic.ttf */,
+				153330C62109C3FF00877DA9 /* LICENSE.txt */,
+				153330C72109C3FF00877DA9 /* NotoSans-Italic.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		15725863209EDD7300B18F30 /* Screens */ = {
@@ -500,16 +526,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1533308C2108A6DE00877DA9 /* Info.plist in Resources */,
-				1533308B2108A6DE00877DA9 /* NotoSans-Italic.ttf in Resources */,
-				153330872108A6DE00877DA9 /* NotoSans-Regular.ttf in Resources */,
-				153330842108A6DE00877DA9 /* Assets.xcassets in Resources */,
-				158BFB17205B1C020010A259 /* GoogleService-Info.plist in Resources */,
-				153330852108A6DE00877DA9 /* Launch Screen.storyboard in Resources */,
-				153330832108A6DE00877DA9 /* Localizable.strings in Resources */,
-				153330882108A6DE00877DA9 /* NotoSans-Bold.ttf in Resources */,
-				1533308A2108A6DE00877DA9 /* LICENSE.txt in Resources */,
-				153330892108A6DE00877DA9 /* NotoSans-BoldItalic.ttf in Resources */,
+				153330E12109C6E900877DA9 /* GoogleService-Info.plist in Resources */,
+				153330CF2109C3FF00877DA9 /* NotoSans-Bold.ttf in Resources */,
+				153330DD2109C67200877DA9 /* InfoPlist.strings in Resources */,
+				153330CC2109C3FF00877DA9 /* Launch Screen.storyboard in Resources */,
+				153330D02109C3FF00877DA9 /* NotoSans-BoldItalic.ttf in Resources */,
+				153330C92109C3FF00877DA9 /* Localizable.strings in Resources */,
+				153330CB2109C3FF00877DA9 /* Assets.xcassets in Resources */,
+				153330D32109C3FF00877DA9 /* Info.plist in Resources */,
+				153330D12109C3FF00877DA9 /* LICENSE.txt in Resources */,
+				153330CE2109C3FF00877DA9 /* NotoSans-Regular.ttf in Resources */,
+				153330D22109C3FF00877DA9 /* NotoSans-Italic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,12 +635,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				158BFB09205AF52A0010A259 /* String+Extensions.swift in Sources */,
-				153330B52108B12800877DA9 /* SmallButton.swift in Sources */,
+				1526D69D20CC34D200DE1298 /* (null) in Sources */,
+				156F565820FF83A500366C38 /* UIImagePickerController+Rx.swift in Sources */,
 				158BFB15205B17400010A259 /* FlowManager.swift in Sources */,
 				153330B02108B10000877DA9 /* AddJigsawViewModel.swift in Sources */,
 				153330AB2108A9B200877DA9 /* CGFloat+Extensions.swift in Sources */,
+				153330D62109C53B00877DA9 /* SmallButton.swift in Sources */,
 				153330932108A88500877DA9 /* WallView.swift in Sources */,
+				153330D42109C41B00877DA9 /* APIRequest.swift in Sources */,
 				158BFB08205AF5280010A259 /* UIColor+Extensions.swift in Sources */,
+				153330CD2109C3FF00877DA9 /* AppDelegate.swift in Sources */,
 				153330A92108A93500877DA9 /* BaseTableViewCell.swift in Sources */,
 				158BFB0A205AF52D0010A259 /* UIAlert+Extensions.swift in Sources */,
 				1572586D209EDED100B18F30 /* BaseViewController.swift in Sources */,
@@ -622,13 +653,13 @@
 				1533309D2108A8C700877DA9 /* JigsawsForWallRequest.swift in Sources */,
 				158BFB0B205AF52F0010A259 /* UIFont+Extensions.swift in Sources */,
 				153330B12108B10000877DA9 /* AddJigsawView.swift in Sources */,
-				1533309F2108A8C700877DA9 /* APIRequest.swift in Sources */,
-				153330862108A6DE00877DA9 /* AppDelegate.swift in Sources */,
 				1572586B209EDEBC00B18F30 /* BaseView.swift in Sources */,
 				157A9BC220AB012000D3FCA3 /* RegisterViewController.swift in Sources */,
 				1533309C2108A8C700877DA9 /* ApiManager.swift in Sources */,
 				153330A62108A90F00877DA9 /* RequestType.swift in Sources */,
 				153330922108A88500877DA9 /* WallViewModel.swift in Sources */,
+				153330DA2109C57C00877DA9 /* GetJigsawImage.swift in Sources */,
+				153330D52109C52800877DA9 /* FirebasePath.swift in Sources */,
 				153330B22108B10000877DA9 /* AddJigsawViewController.swift in Sources */,
 				15725866209EDDB900B18F30 /* LoginView.swift in Sources */,
 				1533309E2108A8C700877DA9 /* AddJigsawRequest.swift in Sources */,
@@ -638,8 +669,8 @@
 				153330A22108A8F500877DA9 /* Jigsaw.swift in Sources */,
 				153330942108A88500877DA9 /* WallTableViewCell.swift in Sources */,
 				1509099A20A9ABCD003BC7B6 /* LoginViewController.swift in Sources */,
+				153330D82109C56E00877DA9 /* PostJigsawImage.swift in Sources */,
 				1579C9D520A20C5B0069204C /* ValidationTextField.swift in Sources */,
-				153330A52108A90F00877DA9 /* FirebasePath.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -675,12 +706,31 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		153330772108A6DE00877DA9 /* Localizable.strings */ = {
+		153330B92109C3FF00877DA9 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				153330782108A6DE00877DA9 /* en */,
+				153330BA2109C3FF00877DA9 /* en */,
+				153330BE2109C3FF00877DA9 /* pl */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		153330DF2109C67200877DA9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				153330DE2109C67200877DA9 /* en */,
+				153330E02109C67400877DA9 /* pl */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		156F565F2100BC7300366C38 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				156F565E2100BC7300366C38 /* en */,
+				156F56602100BC7400366C38 /* pl */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

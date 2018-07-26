@@ -5,6 +5,7 @@ final class WallView: BaseView {
     let tableView: UITableView = {
        let tableView = UITableView()
         tableView.rowHeight = 150
+        tableView.separatorColor = .white
         return tableView
     }()
     

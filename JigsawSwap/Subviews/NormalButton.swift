@@ -12,6 +12,8 @@ class NormalButton: UIButton {
         tintColor = .mainGray
         backgroundColor = .mainPink
         layer.cornerRadius = 25
+        layer.borderWidth = 1
+        layer.borderColor = UIColor.white.cgColor
         
         translatesAutoresizingMaskIntoConstraints = false
         addConstraints([

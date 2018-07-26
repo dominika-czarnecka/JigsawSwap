@@ -4,5 +4,6 @@ import RxCocoa
 
 class WallViewModel {
     var jigsaws: BehaviorRelay<[Jigsaw]> = BehaviorRelay.init(value: [])
-    var jigsawsCount: UInt = 10
+    var jigsawsCount: Int = 15
+    var step: Int = 15
 }

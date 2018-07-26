@@ -2,11 +2,12 @@ import RxSwift
 import RxCocoa
 
 class ApiManager {
-    private let baseURL = URL(string: "https://jigsawswap-395bd")!
+    private let baseURL = URL(string: "https://jigsawswap-395bd.firebaseio.com")!
+    private let imagesURL = URL(string: "https://jigsawswap-395bd.appspot.com/upload/storage/v1/b/images")!
     
-    func send<T: Codable>(apiRequest: APIRequest) -> Observable<T> {
+    func send<T: Codable>(apiRequest: APIRequest, isImage: Bool = false) -> Observable<T> {
         return Observable<T>.create { [unowned self] observer in
-            let request = apiRequest.request(with: self.baseURL)
+            let request = apiRequest.request(with: isImage ? self.imagesURL : self.baseURL)
             print(request)
             let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
                 if let error = error {

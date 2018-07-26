@@ -4,6 +4,7 @@ class AddJigsawRequest: APIRequest {
     var method: RequestType = .POST
     var path: FirebasePath = .jigsaws
     var parameters: [String : String] = [:]
+    var headers: [String: String] = [:]
     var isAuthRequired: Bool = true
     var body: Data? = nil
     

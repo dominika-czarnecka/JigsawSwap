@@ -4,7 +4,8 @@ import FirebaseAuth
 protocol APIRequest {
     var method: RequestType { get }
     var path: FirebasePath { get }
-    var parameters: [String : String] { get }
+    var parameters: [String: String] { get }
+    var headers: [String: String] { get }
     var isAuthRequired: Bool { get }
     var body: Data? { get set }
 }
@@ -31,6 +32,9 @@ extension APIRequest {
         request.httpMethod = method.rawValue
         request.httpBody = body
         request.addValue("application/json", forHTTPHeaderField: "Accept")
+        headers.forEach {
+            request.addValue($0.value, forHTTPHeaderField: $0.key)
+        }
         return request
     }
 }

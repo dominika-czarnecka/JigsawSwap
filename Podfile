@@ -15,6 +15,7 @@ def import_common_pods
     pod 'RxSwift'
     pod 'RxCocoa'
     pod 'RxDataSources'
+    pod 'RxMediaPicker'
     pod 'Kingfisher', '~> 4.0'
     
 end

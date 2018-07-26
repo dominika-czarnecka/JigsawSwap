@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  JigsawSwap
+
+  Created by Dominika Czarnecka on 26.07.2018.
+  Copyright © 2018 Dominika Czarnecka. All rights reserved.
+*/
+"NSCameraUsageDescription" = "Allow to set jigsaw's image.";
+"NSPhotoLibraryUsageDescription" = "Allow to set jigsaw's image.";

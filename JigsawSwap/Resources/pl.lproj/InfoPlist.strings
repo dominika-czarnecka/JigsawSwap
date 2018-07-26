@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  JigsawSwap
+
+  Created by Dominika Czarnecka on 26.07.2018.
+  Copyright © 2018 Dominika Czarnecka. All rights reserved.
+*/
+"Allow to set jigsaw's image." = "Zazwól, aby dodać zdjęcie puzzli";
+"NSPhotoLibraryUsageDescription" = "Zazwól, aby dodać zdjęcie puzzli";

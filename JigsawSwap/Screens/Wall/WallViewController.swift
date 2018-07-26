@@ -23,13 +23,13 @@ final class WallViewController: BaseViewController<WallView> {
                 //TODO: Add Template image
                 //cell.mainImageView.image = UIImage(data: model.images?[0] ?? Data())
                 cell.piecesCountLabel.text = (model.piecesCount ?? 0).description
-                //TODO: Check if is favorite
+                //TODO: Check if it's favorite
             }
             .disposed(by: disposeBag)
     }
     //TODO: Refresh after a while wjen there was no internet
     private func getJigsaws() {
-        let response: Observable<[String: Jigsaw]> = apiManager.send(apiRequest: JigsawsForWallRequest())
+        let response: Observable<[String: Jigsaw]> = apiManager.send(apiRequest: JigsawsForWallRequest(viewModel.jigsawsCount))
             
         response
             .observeOn(MainScheduler.instance)

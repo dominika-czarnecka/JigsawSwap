@@ -34,7 +34,7 @@ enum ValidationType {
         case .int:
             return "^[0-9]+$"
         case .none:
-            return "{,254}"
+            return ".{0,254}"
         }
     }
     
