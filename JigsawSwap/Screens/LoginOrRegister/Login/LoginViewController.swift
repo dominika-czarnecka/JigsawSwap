@@ -4,6 +4,12 @@ import RxSwift
 import FirebaseAuth
 
 final class LoginViewController: BaseViewController<LoginView> {
+    let complectionOnSucceed: (() -> Void)?
+    
+    init(_ complectionOnSucceed: (() -> Void)?) {
+        self.complectionOnSucceed = complectionOnSucceed
+        super.init()
+    }
     
     override func setupReactiveBinding() {
         customView.loginTextField.rx.text
@@ -35,11 +41,11 @@ final class LoginViewController: BaseViewController<LoginView> {
             })
             .disposed(by: disposeBag)
         
-        customView.registerButton.rx.tap
-            .subscribe(onNext: { [weak self] in
-                self?.navigationController?.pushViewController(RegisterViewController(), animated: true)
-                })
-            .disposed(by: disposeBag)
+//        customView.registerButton.rx.tap
+//            .subscribe(onNext: { [weak self] in
+//                self?.navigationController?.pushViewController(RegisterViewController(), animated: true)
+//                })
+//            .disposed(by: disposeBag)
         
         customView.forgotPasswordButton.rx.tap
             .subscribe(onNext: { [weak self] in
@@ -55,7 +61,7 @@ final class LoginViewController: BaseViewController<LoginView> {
                 self?.present(alert, animated: true, completion: nil)
                 return
             }
-            //TODO: handle login
+            self?.complectionOnSucceed?()
         }
     }
 }

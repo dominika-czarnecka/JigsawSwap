@@ -5,7 +5,7 @@ class BaseView: UIView {
     internal func configureConstraints() {
         fatalError("You have to override this function")
     }
-
+    
     convenience init() {
         self.init(frame: .zero)
     }

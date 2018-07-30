@@ -1,6 +1,6 @@
 import UIKit
 
-class NormalButton: UIButton {
+final class NormalButton: UIButton {
     override var isHighlighted: Bool {
         didSet {
             tintColor = isHighlighted ? .lightPink : .mainGray
@@ -11,18 +11,23 @@ class NormalButton: UIButton {
         super.init(frame: frame)
         tintColor = .mainGray
         backgroundColor = .mainPink
-        layer.cornerRadius = 25
+        titleLabel?.font = UIFont().appFont(fontSize: UIFont.FontSize.normalButton)
+        layer.cornerRadius = CGFloat.LayoutDimensions.normalButtonHeight * 0.5
         layer.borderWidth = 1
         layer.borderColor = UIColor.white.cgColor
         
+        configureConstraints()
+    }
+    
+    private func configureConstraints() {
         translatesAutoresizingMaskIntoConstraints = false
         addConstraints([
-            heightAnchor.constraint(equalToConstant: 50),
+            heightAnchor.constraint(equalToConstant: CGFloat.LayoutDimensions.normalButtonHeight),
             widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width * 0.8)
         ])
     }
     
-    @available(*, unavailable, message: "Please use init(style: UITableViewCellStyle, reuseIdentifier: String?) instead")
+    @available(*, unavailable, message: "Please use init(frame: CGRect) instead")
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

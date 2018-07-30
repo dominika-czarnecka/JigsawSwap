@@ -20,6 +20,10 @@ final class ValidationTextField: UITextField {
         backgroundColor = .white
         layer.cornerRadius = 5
         
+        setupConstraints()
+    }
+    
+    private func setupConstraints() {
         translatesAutoresizingMaskIntoConstraints = false
         addConstraints([
             heightAnchor.constraint(equalToConstant: 50),

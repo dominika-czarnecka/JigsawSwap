@@ -4,25 +4,23 @@ final class LoginView: BaseView {
     let loginTextField = ValidationTextField(.mail)
     let passwordTextField = ValidationTextField(.password)
     
-    let loginButton: UIButton = {
-        let button = UIButton()
+    let loginButton: NormalButton = {
+        let button = NormalButton()
         button.setTitle("Login.LoginButton.Title".localized, for: .normal)
-        button.backgroundColor = .gray
         return button
     }()
-    let registerButton: UIButton = {let button = UIButton()
+    let registerButton: UIButton = {
+        let button = UIButton()
         button.setTitle("Login.RegistrationButton.Title".localized, for: .normal)
-        button.backgroundColor = .gray
         return button
     }()
     let forgotPasswordButton: UIButton = {
         let button = UIButton()
         button.setTitle("Login.ForgotPasswordButton.Title".localized, for: .normal)
-        button.backgroundColor = .gray
+        button.titleLabel?.font = UIFont().appFont(fontSize: 12)
         return button
     }()
     
-    //TODO: Setup constraints
     override func configureConstraints() {
         [loginTextField, passwordTextField, loginButton, registerButton, forgotPasswordButton].forEach {
             $0.translatesAutoresizingMaskIntoConstraints = false
@@ -35,19 +33,19 @@ final class LoginView: BaseView {
         ])
         NSLayoutConstraint.activate([
             passwordTextField.topAnchor.constraint(equalTo: loginTextField.bottomAnchor, constant: 50),
-             passwordTextField.centerXAnchor.constraint(equalTo: centerXAnchor)
+            passwordTextField.centerXAnchor.constraint(equalTo: centerXAnchor)
         ])
         NSLayoutConstraint.activate([
-            loginButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 100),
+            loginButton.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -CGFloat.LayoutDimensions.margin * 2),
             loginButton.centerXAnchor.constraint(equalTo: centerXAnchor)
         ])
         NSLayoutConstraint.activate([
-            registerButton.topAnchor.constraint(equalTo: loginButton.bottomAnchor, constant: 50),
-            registerButton.centerXAnchor.constraint(equalTo: centerXAnchor)
+            registerButton.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: CGFloat.LayoutDimensions.margin),
+            registerButton.rightAnchor.constraint(equalTo: safeAreaLayoutGuide.rightAnchor, constant: -CGFloat.LayoutDimensions.margin)
         ])
         NSLayoutConstraint.activate([
-            forgotPasswordButton.topAnchor.constraint(equalTo: registerButton.bottomAnchor, constant: 50),
-            forgotPasswordButton.centerXAnchor.constraint(equalTo: centerXAnchor)
+            forgotPasswordButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 2),
+            forgotPasswordButton.leftAnchor.constraint(equalTo: passwordTextField.leftAnchor)
         ])
     }
 }

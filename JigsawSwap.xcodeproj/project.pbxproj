@@ -43,6 +43,9 @@
 		153330DA2109C57C00877DA9 /* GetJigsawImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153330D92109C57C00877DA9 /* GetJigsawImage.swift */; };
 		153330DD2109C67200877DA9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 153330DF2109C67200877DA9 /* InfoPlist.strings */; };
 		153330E12109C6E900877DA9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 158BFB16205B1C010010A259 /* GoogleService-Info.plist */; };
+		153330E8210B42AA00877DA9 /* LoginOrRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153330E5210B42AA00877DA9 /* LoginOrRegisterViewController.swift */; };
+		153330EC210B4C6E00877DA9 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153330EB210B4C6E00877DA9 /* ContainerViewController.swift */; };
+		153330EE210B4F7A00877DA9 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153330ED210B4F7A00877DA9 /* ContainerView.swift */; };
 		156F565820FF83A500366C38 /* UIImagePickerController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156F565720FF83A500366C38 /* UIImagePickerController+Rx.swift */; };
 		15725866209EDDB900B18F30 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15725865209EDDB900B18F30 /* LoginView.swift */; };
 		1572586B209EDEBC00B18F30 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1572586A209EDEBC00B18F30 /* BaseView.swift */; };
@@ -119,6 +122,9 @@
 		153330D92109C57C00877DA9 /* GetJigsawImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetJigsawImage.swift; sourceTree = "<group>"; };
 		153330DE2109C67200877DA9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		153330E02109C67400877DA9 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		153330E5210B42AA00877DA9 /* LoginOrRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOrRegisterViewController.swift; sourceTree = "<group>"; };
+		153330EB210B4C6E00877DA9 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		153330ED210B4F7A00877DA9 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
 		1549AF472059B5B2000F657D /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		1549AF482059B5B2000F657D /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		1549AF492059B5B2000F657D /* UIAlert+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlert+Extensions.swift"; sourceTree = "<group>"; };
@@ -330,14 +336,23 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		153330E4210B424700877DA9 /* LoginOrRegister */ = {
+			isa = PBXGroup;
+			children = (
+				157A9BBD20AB009000D3FCA3 /* Register */,
+				15725864209EDDA600B18F30 /* Login */,
+				153330E5210B42AA00877DA9 /* LoginOrRegisterViewController.swift */,
+			);
+			path = LoginOrRegister;
+			sourceTree = "<group>";
+		};
 		15725863209EDD7300B18F30 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				153330E4210B424700877DA9 /* LoginOrRegister */,
 				153330AC2108B10000877DA9 /* Add */,
 				1533308D2108A88500877DA9 /* Wall */,
-				157A9BBD20AB009000D3FCA3 /* Register */,
 				15725867209EDE4B00B18F30 /* Base */,
-				15725864209EDDA600B18F30 /* Login */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -356,6 +371,8 @@
 			children = (
 				1572586C209EDED100B18F30 /* BaseViewController.swift */,
 				1572586A209EDEBC00B18F30 /* BaseView.swift */,
+				153330EB210B4C6E00877DA9 /* ContainerViewController.swift */,
+				153330ED210B4F7A00877DA9 /* ContainerView.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -650,6 +667,7 @@
 				1572586D209EDED100B18F30 /* BaseViewController.swift in Sources */,
 				153330952108A88500877DA9 /* WallViewController.swift in Sources */,
 				1579C9DA20A2142C0069204C /* ValidationType.swift in Sources */,
+				153330E8210B42AA00877DA9 /* LoginOrRegisterViewController.swift in Sources */,
 				1533309D2108A8C700877DA9 /* JigsawsForWallRequest.swift in Sources */,
 				158BFB0B205AF52F0010A259 /* UIFont+Extensions.swift in Sources */,
 				153330B12108B10000877DA9 /* AddJigsawView.swift in Sources */,
@@ -663,11 +681,13 @@
 				153330B22108B10000877DA9 /* AddJigsawViewController.swift in Sources */,
 				15725866209EDDB900B18F30 /* LoginView.swift in Sources */,
 				1533309E2108A8C700877DA9 /* AddJigsawRequest.swift in Sources */,
+				153330EE210B4F7A00877DA9 /* ContainerView.swift in Sources */,
 				158BFB07205AF5250010A259 /* Date+Extensions.swift in Sources */,
 				153330B62108B12800877DA9 /* NormalButton.swift in Sources */,
 				157A9BC120AB012000D3FCA3 /* RegisterView.swift in Sources */,
 				153330A22108A8F500877DA9 /* Jigsaw.swift in Sources */,
 				153330942108A88500877DA9 /* WallTableViewCell.swift in Sources */,
+				153330EC210B4C6E00877DA9 /* ContainerViewController.swift in Sources */,
 				1509099A20A9ABCD003BC7B6 /* LoginViewController.swift in Sources */,
 				153330D82109C56E00877DA9 /* PostJigsawImage.swift in Sources */,
 				1579C9D520A20C5B0069204C /* ValidationTextField.swift in Sources */,

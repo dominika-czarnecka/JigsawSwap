@@ -5,6 +5,12 @@ import RxCocoa
 import FirebaseAuth
 
 final class RegisterViewController: BaseViewController<RegisterView> {
+    let complectionOnSucceed: (() -> Void)?
+    
+    init(_ complectionOnSucceed: (() -> Void)?) {
+        self.complectionOnSucceed = complectionOnSucceed
+        super.init()
+    }
     
     override func setupReactiveBinding() {
         customView.loginTextField.rx.text
@@ -63,9 +69,9 @@ final class RegisterViewController: BaseViewController<RegisterView> {
                 self?.present(alert, animated: true, completion: nil)
                 return
             }
-            print(authResult)
+            print(authResult, Auth.auth().currentUser)
             //TODO: Do something after register
-            
+            self?.complectionOnSucceed?()
         }
     }
 }

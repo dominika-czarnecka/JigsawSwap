@@ -8,10 +8,9 @@ final class RegisterView: BaseView {
     let nameTextField = ValidationTextField(.name)
     let surnameTextField = ValidationTextField(.surname)
     let birthDayPickerView = UIDatePicker()
-    let registerButton: UIButton = {
-        let button = UIButton()
+    let registerButton: NormalButton = {
+        let button = NormalButton()
         button.setTitle("Register.RegistrationButton.Title".localized, for: .normal)
-        button.backgroundColor = .gray
         return button
     }()
     
@@ -30,23 +29,23 @@ final class RegisterView: BaseView {
             loginTextField.centerXAnchor.constraint(equalTo: centerXAnchor)
         ])
         NSLayoutConstraint.activate([
-            passwordTextField.topAnchor.constraint(equalTo: loginTextField.bottomAnchor, constant: 50),
+            passwordTextField.topAnchor.constraint(equalTo: loginTextField.bottomAnchor, constant: CGFloat.LayoutDimensions.margin * 2),
             passwordTextField.centerXAnchor.constraint(equalTo: centerXAnchor)
         ])
         NSLayoutConstraint.activate([
-            repeatPasswordTextField.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 50),
+            repeatPasswordTextField.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: CGFloat.LayoutDimensions.margin * 2),
             repeatPasswordTextField.centerXAnchor.constraint(equalTo: centerXAnchor)
         ])
         NSLayoutConstraint.activate([
-            nameTextField.topAnchor.constraint(equalTo: repeatPasswordTextField.bottomAnchor, constant: 50),
+            nameTextField.topAnchor.constraint(equalTo: repeatPasswordTextField.bottomAnchor, constant: CGFloat.LayoutDimensions.margin * 2),
             nameTextField.centerXAnchor.constraint(equalTo: centerXAnchor)
         ])
         NSLayoutConstraint.activate([
-            surnameTextField.topAnchor.constraint(equalTo: nameTextField.bottomAnchor, constant: 50),
+            surnameTextField.topAnchor.constraint(equalTo: nameTextField.bottomAnchor, constant: CGFloat.LayoutDimensions.margin * 2),
             surnameTextField.centerXAnchor.constraint(equalTo: centerXAnchor)
         ])
         NSLayoutConstraint.activate([
-            registerButton.topAnchor.constraint(equalTo: surnameTextField.bottomAnchor, constant: 50),
+            registerButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -CGFloat.LayoutDimensions.margin * 2),
             registerButton.centerXAnchor.constraint(equalTo: centerXAnchor)
         ])
     }

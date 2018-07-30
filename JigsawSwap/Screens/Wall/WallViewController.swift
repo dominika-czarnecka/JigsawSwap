@@ -1,5 +1,6 @@
 import Foundation
 import RxSwift
+import FirebaseAuth
 import FirebaseDatabase
 import FirebaseStorage
 
@@ -66,7 +67,31 @@ final class WallViewController: BaseViewController<WallView> {
     }
     
     @objc private func addButtonAction() {
-        present(AddJigsawViewController(), animated: true, completion: nil)
+        if Auth.auth().currentUser != nil {
+            present(AddJigsawViewController(), animated: true, completion: nil)
+        } else {
+            let alert = UIAlertController(title: "Wall.Alert.NeedToSingIn.title".localized, message: "Wall.Alert.NeedToSingIn.message", preferredStyle: .actionSheet)
+            
+            let cancelAction = UIAlertAction(title: "Alert.Cancel".localized, style: .cancel) { (_) in
+                alert.dismiss(animated: true, completion: nil)
+            }
+            let signInAction = UIAlertAction(title: "Alert.SignIn".localized, style: .default) { [weak self] (_) in
+                self?.navigationController?.pushViewController(LoginOrRegisterViewController({ [weak self] in
+                    self?.present(alert, animated: true, completion: nil)
+                }, open: 1), animated: true)
+            }
+            let logInAction = UIAlertAction(title: "Alert.LogIn".localized, style: .default) { [weak self] (_) in
+                self?.navigationController?.pushViewController(LoginOrRegisterViewController({ [weak self] in
+                    self?.present(alert, animated: true, completion: nil)
+                }, open: 0), animated: true)
+            }
+            
+            alert.addAction(cancelAction)
+            alert.addAction(signInAction)
+            alert.addAction(logInAction)
+            
+            present(alert, animated: true, completion: nil)
+        }
     }
     
     //TODO: Add refresh
