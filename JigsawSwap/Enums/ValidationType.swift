@@ -8,17 +8,17 @@ enum ValidationType {
     func generateCustomPasswordRegex(oneLowercased: Bool = true, oneUppercased: Bool = true, oneNumber: Bool = true, oneSpecial: Bool = true, minLenght: Int = 8, maxLenght: Int = 64) -> String {
         var regexString = "^"
         
-        if oneLowercased { regexString.append("(?=.*[a-ząćęłńóśźż])") }
-        if oneUppercased { regexString.append("(?=.*[A-ZĄĆĘŁŃÓŚŹŻ])") }
+        if oneLowercased { regexString.append("(?=.*[a-z])") }
+        if oneUppercased { regexString.append("(?=.*[A-Z])") }
         if oneNumber { regexString.append("(?=.*[0-9])") }
         if oneSpecial { regexString.append("(?=.*[ !\"\"#()*+,\\-.\\/:;&'<=>?%@^_`{|}~$\\[\\\\\\]])") }
-        regexString.append("[A-Za-ząćęłńóśźżĄĆĘŁŃÓŚŹŻ\\d// !\"\"#()*+,\\-.\\/:;&'<=>?%@^_`{|}~$\\[\\\\\\]]")
+        regexString.append("[A-Za-z\\d// !\"\"#()*+,\\-.\\/:;&'<=>?%@^_`{|}~$\\[\\\\\\]]")
         regexString.append("{\(minLenght),\(maxLenght)}$")
         
         return regexString
     }
     
-    func validationRegex() -> String {
+    var validationRegex: String {
         switch self {
         case .mail:
             return "^[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}$"
@@ -27,13 +27,13 @@ enum ValidationType {
         case .surname:
             return "^[A-Z]+[a-z]*([ -][A-Z][a-z]*)*?$"
         case .password:
-            return "^(?=.*[a-ząćęłńóśźż])(?=.*[A-ZĄĆĘŁŃÓŚŹŻ])(?=.*\\d)(?=.*[ !\"\"#()*+,\\-.\\/:;&'<=>?%@^_`{|}~$\\[\\\\\\]])[A-Za-ząćęłńóśźżĄĆĘŁŃÓŚŹŻ\\d !\"\"#()*+,\\-.\\/:;&'<=>?%@^_`{|}~$\\[\\\\\\]]{8,64}"
+            return "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[ !\"\"#()*+,\\-.\\/:;&'<=>?%@^_`{|}~$\\[\\\\\\]])[A-Za-z\\d !\"\"#()*+,\\-.\\/:;&'<=>?%@^_`{|}~$\\[\\\\\\]]{8,64}"
         case .none:
             return ""
         }
     }
     
-    func errorMessage() -> String {
+    var errorMessage: String {
         switch self {
         case .name:
             return "ValidationRegex.Name.ErrorMessage".localized
@@ -48,7 +48,7 @@ enum ValidationType {
         }
     }
     
-    func placeholder() -> String {
+    var placeholder: String {
         switch self {
         case .mail:
             return "ValidationRegex.Mail.Placholder".localized

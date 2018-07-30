@@ -21,6 +21,7 @@ class WallTableViewCell: BaseTableViewCell {
         textView.textColor = .white
         return textView
     }()
+    
     //TODO: Make hit area at least 44 p if this stays
     let tradeButton: UIButton = {
         let button = UIButton()

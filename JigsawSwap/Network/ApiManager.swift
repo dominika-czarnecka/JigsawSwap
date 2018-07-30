@@ -14,17 +14,6 @@ class ApiManager {
                     return
                 }
                 
-                /////
-                if let data = data {
-                    do {
-                        let json = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
-                        print("JSON:\n" + String(describing: json) + "\n")
-                    } catch {
-                        observer.onError(error)
-                        print(error)
-                    }
-                }
-                //////
                 do {
                     let model: T = try JSONDecoder().decode(T.self, from: data ?? Data())
                     observer.onNext(model)

@@ -10,11 +10,14 @@ final class LoginView: BaseView {
         button.backgroundColor = .gray
         return button
     }()
-    let registerButton: UIButton = {let button = UIButton()
+    
+    let registerButton: UIButton = {
+        let button = UIButton()
         button.setTitle("Login.RegistrationButton.Title".localized, for: .normal)
         button.backgroundColor = .gray
         return button
     }()
+    
     let forgotPasswordButton: UIButton = {
         let button = UIButton()
         button.setTitle("Login.ForgotPasswordButton.Title".localized, for: .normal)
@@ -22,7 +25,6 @@ final class LoginView: BaseView {
         return button
     }()
     
-    //TODO: Setup constraints
     override func configureConstraints() {
         [loginTextField, passwordTextField, loginButton, registerButton, forgotPasswordButton].forEach {
             $0.translatesAutoresizingMaskIntoConstraints = false

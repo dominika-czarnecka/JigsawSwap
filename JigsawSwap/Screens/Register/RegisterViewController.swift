@@ -10,32 +10,32 @@ final class RegisterViewController: BaseViewController<RegisterView> {
         customView.loginTextField.rx.text
             .changed
             .subscribe(onNext: { [weak self] (text) in
-                _ = self?.customView.loginTextField.isValid()
+                guard let strongSelf = self else { return }
+                strongSelf.customView.loginTextField.isValid() ? strongSelf.customView.loginTextField.animateIdentity() : strongSelf.customView.loginTextField.animateError()
             })
             .disposed(by: disposeBag)
         
         customView.repeatPasswordTextField.rx.text
             .changed
             .subscribe(onNext: { [weak self] (text) in
-                if text == self?.customView.passwordTextField.text {
-                    self?.customView.repeatPasswordTextField.dismissErrorMessage()
-                } else {
-                    self?.customView.repeatPasswordTextField.showErrorMessage()
-                }
+                guard let strongSelf = self else { return }
+                strongSelf.customView.passwordTextField.isValid() ? strongSelf.customView.passwordTextField.animateIdentity() : strongSelf.customView.passwordTextField.animateError()
             })
             .disposed(by: disposeBag)
         
         customView.nameTextField.rx.text
             .changed
             .subscribe(onNext: { [weak self] (text) in
-                _ = self?.customView.nameTextField.isValid()
+                guard let strongSelf = self else { return }
+                strongSelf.customView.nameTextField.isValid() ? strongSelf.customView.nameTextField.animateIdentity() : strongSelf.customView.nameTextField.animateError()
             })
             .disposed(by: disposeBag)
         
         customView.surnameTextField.rx.text
             .changed
             .subscribe(onNext: { [weak self] (text) in
-                _ = self?.customView.surnameTextField.isValid()
+                guard let strongSelf = self else { return }
+                strongSelf.customView.surnameTextField.isValid() ? strongSelf.customView.surnameTextField.animateIdentity() : strongSelf.customView.surnameTextField.animateError()
             })
             .disposed(by: disposeBag)
         
@@ -59,13 +59,11 @@ final class RegisterViewController: BaseViewController<RegisterView> {
     private func register(mail: String, password: String) {
         Auth.auth().createUser(withEmail: mail, password: password) { [weak self] (authResult, error) in
             guard error == nil else {
-                let alert = UIAlertController(withOkAction: nil, title: "Error".localized, message: error?.localizedDescription)
+                let alert = UIAlertController(with: nil, title: "Error".localized, message: error?.localizedDescription)
                 self?.present(alert, animated: true, completion: nil)
                 return
             }
-            print(authResult)
             //TODO: Do something after register
-            
         }
     }
 }

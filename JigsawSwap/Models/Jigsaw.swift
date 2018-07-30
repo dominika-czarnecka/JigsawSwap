@@ -1,11 +1,12 @@
 class Jigsaw: Codable {
-    var ownerID: String?
+    var ownerID: String
     var piecesCount: Int?
     var missingPiecesCount: Int?
     var description: String?
     var images: [String]?
     
-    init(_ owner: String, piecesCount: Int, missingPiecesCount: Int, description: String?, images: [String]?) {
+    init?(_ owner: String?, piecesCount: Int?, missingPiecesCount: Int?, description: String?, images: [String]?) {
+        guard let owner = owner else { return nil }
         self.ownerID = owner
         self.piecesCount = piecesCount
         self.missingPiecesCount = missingPiecesCount

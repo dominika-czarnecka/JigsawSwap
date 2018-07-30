@@ -39,10 +39,8 @@ class FlowManager {
         tradesNavigationController.tabBarItem = tradesBarItem
         
         setupNavigationBarAppearace()
-        
-        tabBarController.tabBar.backgroundColor = .mainGray
-        tabBarController.tabBar.unselectedItemTintColor = .white
-        tabBarController.tabBar.tintColor = .mainPink
+        setupTabBarAppearance()
+       
         tabBarController.viewControllers = [profileViewController, wallNavigationController, jigsawNavigationController, tradesNavigationController]
         
         appDelegate.window?.rootViewController = tabBarController
@@ -61,4 +59,12 @@ class FlowManager {
         navigationBarAppearace.barStyle = .black
         navigationBarAppearace.shadowImage = UIImage()
     }
+    
+    private func setupTabBarAppearance() {
+        let tabBarApperance = UITabBar.appearance()
+        tabBarApperance.backgroundColor = .mainGray
+        tabBarApperance.unselectedItemTintColor = .white
+        tabBarApperance.tintColor = .mainPink
+    }
+    
 }

@@ -15,10 +15,6 @@ final class RegisterView: BaseView {
         return button
     }()
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-    }
-    
     override func configureConstraints() {
         [loginTextField, passwordTextField, repeatPasswordTextField, nameTextField, registerButton, surnameTextField].forEach {
             $0.translatesAutoresizingMaskIntoConstraints = false

@@ -398,7 +398,6 @@
 				1505482920599A9300B25A6A /* Resources */,
 				1505485C20599ACB00B25A6A /* TODO as warning */,
 				EC59056A2FF892999D0A10D6 /* [CP] Embed Pods Frameworks */,
-				32F76FB95AF2C047B0A3DF0A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -549,24 +548,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "#Script to make TODO a Warning\nif [ \"${CONFIGURATION}\" = \"Debug\" ]\nthen\n#TAGS is a keyword to make line as warning\nTAGS=\"TODO:\"\necho \"searching ${SRCROOT} for ${TAGS}\"\nfind \"${SRCROOT}\" \\( -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"\nfi";
-		};
-		32F76FB95AF2C047B0A3DF0A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-JigsawSwap/Pods-JigsawSwap-resources.sh",
-				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle,
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JigsawSwap/Pods-JigsawSwap-resources.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 		835EF673D310C6E8D3BBFC93 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

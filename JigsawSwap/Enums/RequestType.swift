@@ -1,3 +1,5 @@
 public enum RequestType: String {
-    case GET, POST, DELETE
+    case GET
+    case POST
+    case DELETE
 }

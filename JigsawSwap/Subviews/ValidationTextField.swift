@@ -8,11 +8,11 @@ final class ValidationTextField: UITextField {
     let validationRegex: String
 
     init(_ textFieldType: ValidationType, defaultString: String? = nil) {
-        self.errorMessage = textFieldType.errorMessage()
+        self.errorMessage = textFieldType.errorMessage
         self.defaultString = defaultString
-        self.validationRegex = textFieldType.validationRegex()
+        self.validationRegex = textFieldType.validationRegex
         super.init(frame: .zero)
-        self.placeholder = textFieldType.placeholder()
+        self.placeholder = textFieldType.placeholder
         
         translatesAutoresizingMaskIntoConstraints = false
         addConstraints([
@@ -27,15 +27,14 @@ final class ValidationTextField: UITextField {
     }
     
     func isValid() -> Bool {
-        if let text = self.text, text.isValid(with: validationRegex) {
-            dismissErrorMessage()
-            return true
-        }
-        showErrorMessage()
-        return false
+       return text?.isValid(with: validationRegex) ?? false
     }
 
-    func showErrorMessage() {
+    func set(as valid: Bool) {
+        valid ? animateIdentity() : animateError()
+    }
+    
+    func animateError() {
         layer.borderColor = UIColor.red.cgColor
         
         let animation = CABasicAnimation(keyPath: "position")
@@ -47,7 +46,7 @@ final class ValidationTextField: UITextField {
         layer.add(animation, forKey: "position")
     }
     
-    func dismissErrorMessage() {
+    func animateIdentity() {
         layer.borderColor = UIColor.clear.cgColor
     }
 }

@@ -16,6 +16,10 @@ class AddJigsawRequest: APIRequest {
     }
     
     init(_ jigsaws: [Jigsaw]) {
-        body = try? JSONEncoder().encode(jigsaws)
+        do {
+            body = try JSONEncoder().encode(jigsaws)
+        } catch {
+            print(error)
+        }
     }
 }

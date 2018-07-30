@@ -6,7 +6,7 @@ final class WallViewController: BaseViewController<WallView> {
     private let reuseIdentifier = "cell"
     private let viewModel = WallViewModel()
     private var apiManager = ApiManager()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         customView.tableView.register(WallTableViewCell.self, forCellReuseIdentifier: reuseIdentifier)
@@ -29,7 +29,7 @@ final class WallViewController: BaseViewController<WallView> {
     
     private func getJigsaws() {
         let response: Observable<[String: Jigsaw]> = apiManager.send(apiRequest: JigsawsForWallRequest())
-            
+        
         response
             .observeOn(MainScheduler.instance)
             .map({ (dict) -> [Jigsaw] in
@@ -37,35 +37,16 @@ final class WallViewController: BaseViewController<WallView> {
             })
             .subscribe(onNext: { [weak self] jigsaws in
                 self?.viewModel.jigsaws.accept(jigsaws)
-            }, onError: { [weak self] error in
-                let alert = UIAlertController(title: "General.Error".localized, message: error.localizedDescription, preferredStyle: .alert)
-                self?.present(alert, animated: true, completion: nil)
-
+                }, onError: { [weak self] error in
+                    let alert = UIAlertController(title: "General.Error".localized, message: error.localizedDescription, preferredStyle: .alert)
+                    self?.present(alert, animated: true, completion: nil)
             })
             .disposed(by: disposeBag)
     }
     
-    private func addJigsawToFavorites(cell: WallTableViewCell) {
-        
-    }
-    
-    private func tradeJigsaw(cell: WallTableViewCell) {
-        
-    }
-    
     private func setupNavigationBar() {
-        let filterNavButton = UIBarButtonItem(title: "Wall.Filter".localized, style: .plain, target: self, action: #selector(filterButtonAction))
-        let addNavButton = UIBarButtonItem(title: "Wall.Add".localized, style: .plain, target: self, action: #selector(addButtonAction))
-        navigationItem.leftBarButtonItem = filterNavButton
-        navigationItem.rightBarButtonItem = addNavButton
-    }
-    
-    @objc private func filterButtonAction() {
-        
-    }
-    
-    @objc private func addButtonAction() {
-        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Wall.Filter".localized, style: .plain, target: self, action: nil)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Wall.Add".localized, style: .plain, target: self, action: nil)
     }
     
     //TODO: Add refresh

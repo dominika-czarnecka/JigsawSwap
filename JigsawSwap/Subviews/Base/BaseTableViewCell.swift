@@ -1,6 +1,7 @@
 import UIKit
 
 class BaseTableViewCell: UITableViewCell {
+    
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         configureConstraints()
@@ -11,7 +12,5 @@ class BaseTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
 
-    internal func configureConstraints() {
-        
-    }
+    internal func configureConstraints() { }
 }
